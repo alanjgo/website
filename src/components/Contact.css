@@ -3,36 +3,6 @@
   background: var(--secondary);
 }
 
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin-top: 3rem;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-subtitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--foreground);
-  margin-bottom: 1rem;
-}
-
-.contact-description {
-  color: var(--muted-foreground);
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.contact-methods {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
 
 .contact-method {
   display: flex;
@@ -66,98 +36,10 @@
   font-size: 0.875rem;
 }
 
-/* Form */
-.contact-form-container {
-  background: var(--background);
-  padding: 2rem;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.form-group label {
-  font-weight: 600;
-  color: var(--foreground);
-  font-size: 0.875rem;
-}
-
-.form-group input,
-.form-group textarea {
-  padding: 0.75rem;
-  border: 2px solid var(--border);
-  border-radius: var(--radius);
-  font-size: 1rem;
-  transition: border-color 0.2s ease;
-  background: var(--input);
-  color: var(--foreground);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--ring);
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: var(--muted);
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
-  font-family: inherit;
-}
-
-.submit-btn {
-  background: var(--foreground);
-  color: var(--background);
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.submit-btn:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
-}
-
-.submit-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .contact {
     padding: 4rem 0;
-  }
-  
-  .contact-content {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-top: 2rem;
-  }
-  
-  .contact-form-container {
-    padding: 1.5rem;
   }
   
   .contact-method {
