@@ -37,17 +37,6 @@ export function Experience() {
     }
   ]
 
-  const skills = [
-    { name: "React", level: 90 },
-    { name: "JavaScript", level: 95 },
-    { name: "CSS/SCSS", level: 90 },
-    { name: "Node.js", level: 80 },
-    { name: "Python", level: 75 },
-    { name: "SQL", level: 85 },
-    { name: "Git", level: 90 },
-    { name: "Figma", level: 70 }
-  ]
-
   return (
     <section id="experience" className="experience">
       <div className="container">
@@ -77,26 +66,6 @@ export function Experience() {
                         <span key={index} className="tech-tag">{tech}</span>
                       ))}
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="skills-section">
-            <h3 className="subsection-title">Compétences Techniques</h3>
-            <div className="skills-grid">
-              {skills.map((skill) => (
-                <div key={skill.name} className="skill-item">
-                  <div className="skill-header">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-level">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    <div 
-                      className="skill-progress" 
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
                   </div>
                 </div>
               ))}

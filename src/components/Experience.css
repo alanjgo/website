@@ -105,49 +105,6 @@
   gap: 0.5rem;
 }
 
-/* Skills */
-.skills-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.skill-name {
-  font-weight: 600;
-  color: var(--foreground);
-}
-
-.skill-level {
-  font-size: 0.875rem;
-  color: var(--muted-foreground);
-}
-
-.skill-bar {
-  height: 8px;
-  background: var(--secondary);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background: var(--foreground);
-  border-radius: 4px;
-  transition: width 1s ease;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .experience {
