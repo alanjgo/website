@@ -58,9 +58,6 @@ export function Portfolio() {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Portfolio</h2>
-          <p className="section-subtitle">
-            Une sélection de mes projets récents, montrant ma passion pour le design et le développement.
-          </p>
         </div>
 
         <div className="projects-grid">
@@ -76,12 +73,6 @@ export function Portfolio() {
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
-                
-                <div className="project-technologies">
-                  {project.technologies.map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
-                  ))}
-                </div>
               </div>
             </div>
           ))}

@@ -5,67 +5,48 @@ export function Experience() {
   const experiences = [
     {
       id: 1,
-      company: "TechCorp Solutions",
-      position: "Développeur Frontend Senior",
-      period: "2022 - Présent",
+      company: "Staycation",
+      position: "Product Manager",
+      period: "2025 - Présent",
       description: "Développement d'applications web modernes avec React et Vue.js. Leadership technique d'une équipe de 5 développeurs.",
-      technologies: ["React", "Vue.js", "TypeScript", "Node.js", "AWS"]
     },
     {
       id: 2,
-      company: "Digital Innovations Lab",
-      position: "Développeur Full Stack",
-      period: "2020 - 2022",
+      company: "Skeepers",
+      position: "Product Manager",
+      period: "2022 - 2025",
       description: "Création de solutions web complètes, de la conception à la mise en production. Collaboration avec les équipes design et produit.",
-      technologies: ["JavaScript", "Python", "Django", "PostgreSQL", "Docker"]
     },
     {
       id: 3,
-      company: "Startup Creative",
-      position: "Développeur Frontend",
-      period: "2018 - 2020",
+      company: "Noé",
+      position: "Founder associate",
+      period: "2022",
       description: "Développement d'interfaces utilisateur innovantes et responsive. Participation à la conception de l'expérience utilisateur.",
-      technologies: ["React", "CSS3", "HTML5", "JavaScript", "Figma"]
     },
-    {
-      id: 4,
-      company: "Web Agency Pro",
-      position: "Développeur Web Junior",
-      period: "2016 - 2018",
-      description: "Création de sites web pour clients variés. Apprentissage des bonnes pratiques et des technologies modernes.",
-      technologies: ["HTML", "CSS", "JavaScript", "PHP", "WordPress"]
-    }
+
   ]
 
   return (
     <section id="experience" className="experience">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Expérience & Compétences</h2>
-          <p className="section-subtitle">
-            Mon parcours professionnel et les technologies que j'utilise pour créer des expériences numériques exceptionnelles.
-          </p>
+          <h2 className="section-title">Work experience</h2>
         </div>
 
         <div className="experience-content">
           <div className="experience-section">
-            <h3 className="subsection-title">Expérience Professionnelle</h3>
             <div className="timeline">
               {experiences.map((exp) => (
                 <div key={exp.id} className="timeline-item">
                   <div className="timeline-marker"></div>
                   <div className="timeline-content">
                     <div className="timeline-header">
-                      <h4 className="company-name">{exp.company}</h4>
+                      <p className="company-name">{exp.company}</p>
                       <span className="position">{exp.position}</span>
                       <span className="period">{exp.period}</span>
                     </div>
                     <p className="timeline-description">{exp.description}</p>
-                    <div className="timeline-technologies">
-                      {exp.technologies.map((tech, index) => (
-                        <span key={index} className="tech-tag">{tech}</span>
-                      ))}
-                    </div>
                   </div>
                 </div>
               ))}

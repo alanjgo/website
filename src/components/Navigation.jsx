@@ -25,9 +25,6 @@ export function Navigation() {
   return (
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        <div className="nav-logo">
-          <span>Alan Jego</span>
-        </div>
         
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <a onClick={() => scrollToSection('home')} className="nav-link">Accueil</a>

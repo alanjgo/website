@@ -10,8 +10,8 @@ function App() {
     <main className="app">
       <Navigation />
       <Hero />
-      <Portfolio />
       <Experience />
+      <Portfolio />
       <Contact />
     </main>
   )

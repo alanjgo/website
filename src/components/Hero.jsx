@@ -8,13 +8,6 @@ export function Hero() {
     setIsVisible(true)
   }, [])
 
-  const scrollToPortfolio = () => {
-    const element = document.getElementById('portfolio')
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   return (
     <section id="home" className="hero">
       <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
@@ -35,10 +28,6 @@ export function Hero() {
             source projects, or seeking inspiration in art and nature.
           </p>
         </div>
-
-        <button className="hero-cta" onClick={scrollToPortfolio}>
-          Voir mon travail
-        </button>
       </div>
     </section>
   )
