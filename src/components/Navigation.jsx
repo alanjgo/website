@@ -28,9 +28,8 @@ export function Navigation() {
         
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <a onClick={() => scrollToSection('home')} className="nav-link">Accueil</a>
+          <a onClick={() => scrollToSection('experience')} className="nav-link">Experience</a>
           <a onClick={() => scrollToSection('portfolio')} className="nav-link">Portfolio</a>
-          <a onClick={() => scrollToSection('experience')} className="nav-link">Expérience</a>
-          <a onClick={() => scrollToSection('contact')} className="nav-link">Contact</a>
         </div>
 
         <button 

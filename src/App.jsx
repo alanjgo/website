@@ -10,9 +10,9 @@ function App() {
     <main className="app">
       <Navigation />
       <Hero />
+      <Contact />
       <Experience />
       <Portfolio />
-      <Contact />
     </main>
   )
 }

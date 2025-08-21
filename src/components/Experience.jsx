@@ -7,22 +7,22 @@ export function Experience() {
       id: 1,
       company: "Staycation",
       position: "Product Manager",
-      period: "2025 - Présent",
-      description: "Développement d'applications web modernes avec React et Vue.js. Leadership technique d'une équipe de 5 développeurs.",
+      period: "2025 - Today",
+      description: "In charge of creating a delightful staying experience for our users.",
     },
     {
       id: 2,
       company: "Skeepers",
       position: "Product Manager",
       period: "2022 - 2025",
-      description: "Création de solutions web complètes, de la conception à la mise en production. Collaboration avec les équipes design et produit.",
+      description: "In charge of Influencer Marketing brand usage (+20M ARR).",
     },
     {
       id: 3,
       company: "Noé",
       position: "Founder associate",
       period: "2022",
-      description: "Développement d'interfaces utilisateur innovantes et responsive. Participation à la conception de l'expérience utilisateur.",
+      description: "Launched a recruitment product to hire Product Managers.",
     },
 
   ]

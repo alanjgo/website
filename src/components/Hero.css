@@ -42,8 +42,7 @@
 
 .hero-description {
   max-width: 48rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .hero-text {
@@ -61,7 +60,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 0 1rem 4rem 1rem;
+   padding: 0 1rem 4rem 1rem;
   }
   
   .hero-content {
