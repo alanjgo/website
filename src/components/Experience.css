@@ -1,6 +1,5 @@
 .experience {
   padding-top: 4rem;
-  background: #0a0a0a;
 }
 
 .section-title {
@@ -14,12 +13,6 @@
 
 .section-header {
   margin-bottom: 2rem;
-}
-
-.experience-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin:0 auto;
 }
 
 .experience-section {

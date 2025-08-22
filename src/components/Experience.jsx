@@ -3,27 +3,34 @@ import './Experience.css'
 
 export function Experience() {
   const experiences = [
-    {
-      id: 1,
-      company: "Staycation",
-      position: "Product Manager",
-      period: "2025 - Today",
-      description: "In charge of creating a delightful staying experience for our users.",
-    },
-    {
-      id: 2,
-      company: "Skeepers",
-      position: "Product Manager",
-      period: "2022 - 2025",
-      description: "In charge of Influencer Marketing brand usage (+20M ARR).",
-    },
-    {
-      id: 3,
-      company: "Noé",
-      position: "Founder associate",
-      period: "2022",
-      description: "Launched a recruitment product to hire Product Managers.",
-    },
+      {
+        id: 1,
+        company: "Staycation",
+        position: "Product Manager",
+        period: "2025 - Today",
+        description: "In charge of creating a delightful staying experience for 4M users.",
+      },
+      {
+        id: 2,
+        company: "Skeepers",
+        position: "Product Manager",
+        period: "2022 - 2025",
+        description: "In charge of Influencer Marketing brand users (+20M ARR).",
+      },
+      {
+        id: 3,
+        company: "Noé",
+        position: "Founder associate",
+        period: "2022",
+        description: "Launched a recruitment platform to hire Product Managers.",
+      },
+      {
+        id: 4,
+        company: "IAE Bordeaux",
+        position: "Student",
+        period: "2020 - 2022",
+        description: "Master of Strategic Marketing",
+      },
 
   ]
 
@@ -31,10 +38,8 @@ export function Experience() {
     <section id="experience" className="experience">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Work experience</h2>
+          <h2 className="section-title">Experience</h2>
         </div>
-
-        <div className="experience-content">
           <div className="experience-section">
             <div className="timeline">
               {experiences.map((exp) => (
@@ -51,7 +56,6 @@ export function Experience() {
                 </div>
               ))}
             </div>
-          </div>
         </div>
       </div>
     </section>
