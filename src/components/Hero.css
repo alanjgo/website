@@ -21,11 +21,33 @@
   transform: translateY(0);
 }
 
+.hero-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero-title {
   font-size: 1.5rem;
   font-weight: 900;
   color: #fafafa;
-  margin-bottom: 1.5rem;
+  margin: 0;
   line-height: 1.1;
 }
 
@@ -64,6 +86,16 @@
   
   .hero-content {
     padding: 0;
+  }
+  
+  .hero-header {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-photo {
+    width: 3rem;
+    height: 3rem;
   }
   
   .hero-title {

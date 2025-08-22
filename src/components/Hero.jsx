@@ -11,7 +11,12 @@ export function Hero() {
   return (
     <section id="home" className="hero">
       <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
-        <h1 className="hero-title">Alan Jego</h1>
+        <div className="hero-header">
+          <div className="profile-photo">
+            <img src="https://ca.slack-edge.com/T02MSU1QQ-U08PARTAW22-7cb8ff5ed9ce-512" alt="Alan Jego" />
+          </div>
+          <h1 className="hero-title">Alan Jego</h1>
+        </div>
         
         <p className="hero-subtitle">
           I build my ideas into beautiful, functional experiences that make a difference.
