@@ -119,4 +119,10 @@ a {
   .container {
     padding: 0 0.75rem;
   }
+
+  .app {
+    margin-top: 25%;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
 }

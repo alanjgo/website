@@ -33,21 +33,15 @@
 /* Responsive */
 @media (max-width: 768px) {
   .contact {
-    padding: 4rem 0;
-  }
-  
-  .contact-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    padding: 0;
   }
   
   .contact-methods {
-    gap: 1.5rem;
     padding: 0 1rem;
   }
   
   .contact-method {
-    padding: 1rem;
+    padding-right: 1rem;
   }
   
   .contact-icon {

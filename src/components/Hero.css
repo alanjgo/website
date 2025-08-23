@@ -80,32 +80,44 @@
 
 @media (max-width: 768px) {
   .hero {
-   padding: 0 1rem 4rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+    justify-content: center;
+    text-align: start;
   }
   
   .hero-content {
     padding: 0;
+    text-align: start;
   }
   
   .hero-header {
+    flex-direction: row;
     gap: 1rem;
-    margin-bottom: 1rem;
+    align-items: center;
   }
   
   .profile-photo {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
   
   .hero-title {
-    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: start;
   }
   
   .hero-subtitle {
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: start;
   }
   
   .hero-description {
-    margin-bottom: 1.5rem;
+    text-align: start;
+  }
+  
+  .hero-text,
+  .hero-text-secondary {
+    font-size: 1rem;
+    text-align: start;
   }
 }
