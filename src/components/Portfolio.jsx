@@ -7,14 +7,14 @@ export function Portfolio() {
       id: 1,
       title: "AI personal finance assistant",
       description: "In progress. Get personalized financial advice with AI. Manage your money as easily as a game.",
-      image: "/src/components/assets/5578703.png",
+      image: "/5578703.png",
       link: "#"
     },
     {
       id: 2,
       title:"Vibin",
       description: "Your social app for your close friends. Available on iOS.",
-      image: "/src/components/assets/vibin.png",
+      image: "/vibin.png",
       link: "#"
     },
     {
