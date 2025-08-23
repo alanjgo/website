@@ -17,13 +17,6 @@ export function Portfolio() {
       image: "/vibin.png",
       link: "#"
     },
-    {
-      id: 3,
-      title: "tchinandchill",
-      description: "Website for a local cavist in Brittany. Made during a student project.",
-      image: "https://tchinandchill.com/wp-content/uploads/2021/02/Tchin-and-chill-Pour-un-plaisir-partage-vect-bio-blanc-1.png",
-      link: "#"
-    },
   ]
 
   return (
