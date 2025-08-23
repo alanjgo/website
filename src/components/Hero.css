@@ -10,7 +10,6 @@
 .hero-content {
   max-width: 64rem;
   padding: 0 1.5rem;
-  transition: all 1s ease;
   opacity: 0;
   transform: translateY(2rem);
   text-align: start;
