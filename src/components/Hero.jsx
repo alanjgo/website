@@ -19,18 +19,16 @@ export function Hero() {
         </div>
         
         <p className="hero-subtitle">
-          I build my ideas into beautiful, functional experiences that make a difference.
+          I like building smooth experiences on digital products.
         </p>
 
         <div className="hero-description">
           <p className="hero-text">
-            With a passion for creating meaningful digital experiences, I combine technical expertise with creative
-            vision to deliver solutions that not only look beautiful but also solve real problems.
+            As a Product Manager, I'm always looking to find the best way to meet business objectives and make the best product for users.
           </p>
 
           <p className="hero-text-secondary">
-            When I'm not crafting digital experiences, you'll find me exploring new technologies, contributing to open
-            source projects, or seeking inspiration in art and nature.
+            I love exploring new technologies and interesting topics such as coding, sociology or philosophy.
           </p>
         </div>
       </div>

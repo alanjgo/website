@@ -19,7 +19,7 @@ export function Experience() {
         website: "https://skeepers.com",
         position: "Product Manager",
         period: "2022 - 2025",
-        description: "In charge of Influencer Marketing brand users (+20M ARR).",
+        description: "In charge of Influencer Marketing brand users (+1 000 Mid-Enterprise level brands).",
       },
       {
         id: 3,

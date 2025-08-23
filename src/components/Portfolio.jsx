@@ -6,21 +6,21 @@ export function Portfolio() {
     {
       id: 1,
       title: "AI personal finance assistant",
-      description: "In progress. Get personalized financial advice with AI",
-      image: "/design-system-components-interface.png",
+      description: "In progress. Get personalized financial advice with AI. Manage your money as easily as a game.",
+      image: "/src/components/assets/5578703.png",
       link: "#"
     },
     {
       id: 2,
       title:"Vibin",
-      description: "Your social app for your close friends",
-      image: "/src/components/assets/vibin.svg",
+      description: "Your social app for your close friends. Available on iOS.",
+      image: "/src/components/assets/vibin.png",
       link: "#"
     },
     {
       id: 3,
       title: "tchinandchill",
-      description: "Website for a local cavist",
+      description: "Website for a local cavist in Brittany. Made during a student project.",
       image: "https://tchinandchill.com/wp-content/uploads/2021/02/Tchin-and-chill-Pour-un-plaisir-partage-vect-bio-blanc-1.png",
       link: "#"
     },
@@ -30,7 +30,7 @@ export function Portfolio() {
     <section id="portfolio" className="portfolio">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Portfolio</h2>
+          <h2 className="section-title">Projects</h2>
         </div>
 
         <div className="projects-grid">
