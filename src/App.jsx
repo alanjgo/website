@@ -3,6 +3,7 @@ import { Hero } from './components/Hero'
 import { Portfolio } from './components/Portfolio'
 import { Experience } from './components/Experience'
 import { Contact } from './components/Contact'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Contact />
       <Experience />
       <Portfolio />
+      <Analytics />
     </main>
   )
 }
