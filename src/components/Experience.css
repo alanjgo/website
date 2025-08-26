@@ -31,7 +31,7 @@
   left: 1rem;
   top: 0;
   height: calc(100% - 1rem); /* S'arrête juste avant le dernier élément */
-  width: 2px;
+  width: 1px;
   background: #262626;
 }
 
@@ -57,7 +57,7 @@
   height: 1rem;
   background: #fafafa;
   border-radius: 50%;
-  border: 3px solid #0a0a0a;
+  border: 2px solid #0a0a0a;
 }
 
 .timeline-header {
@@ -153,10 +153,6 @@
   
   .timeline-item {
     padding-left: 2.5rem;
-  }
-  
-  .timeline-marker {
-    left: 0.25rem;
   }
   
   .timeline-header {
