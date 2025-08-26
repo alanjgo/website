@@ -151,12 +151,16 @@
     margin-bottom: 1.5rem;
   }
   
+  .timeline::before {
+    left: 0.75rem; /* Centre la ligne avec les points */
+  }
+  
   .timeline-item {
     padding-left: 2.5rem;
   }
   
   .timeline-marker {
-    left: 0.25rem;
+    left: 0.25rem; /* Centré par rapport à la ligne */
   }
   
   .timeline-header {
