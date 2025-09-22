@@ -4,8 +4,8 @@
   margin: 0;
 }
 
-html,
-body {
+html {
+  background: #171717;
   max-width: 100vw;
   overflow-x: hidden;
   transition: all 1s ease;
@@ -13,7 +13,9 @@ body {
 
 body {
   color: #fafafa;
-  background: #171717;
+  max-width: 100vw;
+  overflow-x: hidden;
+  transition: all 1s ease;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
