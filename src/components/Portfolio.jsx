@@ -1,5 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Portfolio.css'
+
+// Composant Carrousel
+function ImageCarousel({ images, title }) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+  }
+
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+  }
+
+  return (
+    <div className="carousel-container">
+      <div className="carousel-wrapper">
+        <button className="carousel-btn prev" onClick={prevImage} aria-label="Image précédente">
+          ‹
+        </button>
+        <div className="carousel-image-container">
+          <img 
+            src={images[currentIndex]} 
+            alt={`${title} - Image ${currentIndex + 1}`}
+            className="carousel-image"
+          />
+        </div>
+        <button className="carousel-btn next" onClick={nextImage} aria-label="Image suivante">
+          ›
+        </button>
+      </div>
+      <div className="carousel-indicators">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            className={`indicator ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => setCurrentIndex(index)}
+            aria-label={`Aller à l'image ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 export function Portfolio() {
   const projects = [
@@ -14,7 +57,7 @@ export function Portfolio() {
       id: 2,
       title:"Vibin",
       description: "Your social app for your close friends. Available on iOS.",
-      image: "/vibin.png",
+      images: ["/AppStore-D.png", "/AppStore-F.png", "/Group 114.png"],
       link: "#"
     },
   ]
@@ -30,7 +73,11 @@ export function Portfolio() {
           {projects.map((project) => (
             <div key={project.id} className="project-card">
               <div className="project-image">
-                <img src={project.image} alt={project.title} />
+                {project.images ? (
+                  <ImageCarousel images={project.images} title={project.title} />
+                ) : (
+                  <img src={project.image} alt={project.title} />
+                )}
               </div>
               
               <div className="project-content">
