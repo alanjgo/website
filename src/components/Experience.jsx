@@ -6,7 +6,7 @@ export function Experience() {
       {
         id: 1,
         company: "Staycation",
-        logo: "/public/staycation.png",
+        logo: "/staycation.png",
         website: "https://staycation.co",
         position: "Product Manager",
         period: "2025 - Today",
