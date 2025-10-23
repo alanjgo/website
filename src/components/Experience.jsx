@@ -6,7 +6,7 @@ export function Experience() {
       {
         id: 1,
         company: "Staycation",
-        logo: "https://media.licdn.com/dms/image/v2/D4E0BAQG0Al-MW_x-Dg/company-logo_100_100/company-logo_100_100/0/1733384753625/staycation_logo?e=1758758400&v=beta&t=QMRqRlF692WiA7f74DG16qzLnNGqAS6YQtVzV1mvkyU",
+        logo: "/public/staycation.png",
         website: "https://staycation.co",
         position: "Product Manager",
         period: "2025 - Today",
@@ -15,7 +15,7 @@ export function Experience() {
       {
         id: 2,
         company: "Skeepers",
-        logo: "https://media.licdn.com/dms/image/v2/D4E0BAQE9SpymL8tMeA/company-logo_100_100/company-logo_100_100/0/1720166399044/skeepers_logo?e=1758758400&v=beta&t=W53XPoFf4KVd_kieZ1WJ6MZZOe1c5oFtb7Z1WorMJcQ",
+        logo: "/skeepers.jpeg",
         website: "https://skeepers.com",
         position: "Product Manager",
         period: "2022 - 2025",
@@ -33,7 +33,7 @@ export function Experience() {
       {
         id: 4,
         company: "IAE Bordeaux",
-        logo: "https://media.licdn.com/dms/image/v2/C510BAQGxSfj-1QImVQ/company-logo_100_100/company-logo_100_100/0/1631337030795?e=1758758400&v=beta&t=BnAqI7Qz6VPrp1az7WIZSdTd5zUK_P5SX-Uf8OkDYBk",
+        logo: "/iaebordeaux.jpeg",
         website: "https://www.iae-bordeaux.fr",
         position: "Student",
         period: "2020 - 2022",
@@ -59,7 +59,7 @@ export function Experience() {
                       <div className="company-info">
                         <p className="company-name">{exp.company}</p>
                         <div className="company-logo">
-                          <a href={exp.website} target="_blank" rel="noopener noreferrer" title={`Visiter le site de ${exp.company}`}>
+                          <a href={exp.website} target="_blank" rel="noopener noreferrer" title={`Voir le site de ${exp.company}`}>
                             <img src={exp.logo} alt={`${exp.company} logo`} />
                           </a>
                         </div>

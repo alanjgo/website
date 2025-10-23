@@ -18,6 +18,7 @@
 .hero-content.visible {
   opacity: 1;
   transform: translateY(0);
+  padding: 0 16px;
 }
 
 .hero-header {
