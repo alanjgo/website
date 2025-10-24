@@ -6,7 +6,7 @@ export function Portfolio() {
     {
       id: 1,
       title: "Lumi",
-      description: "In progress. Get personalized financial advice with AI. Manage your money as easily as a game.",
+      description: "Get personalized financial advice with AI. Manage your money as easily as a game.",
       logo: "/lumi.png",
     },
     {

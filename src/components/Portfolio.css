@@ -29,14 +29,24 @@
 }
 
 .projects-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
 .project-item {
   position: relative;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
 }
+/*
+.project-item:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.01);
+}
+*/
 
 .project-marker {
   position: absolute;
@@ -76,7 +86,7 @@
 
 .project-title {
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #fafafa;
   margin: 0;
 }
@@ -119,7 +129,6 @@
 .project-description {
   color: #d4d4d4;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
   font-size: 0.95rem;
 }
 
@@ -129,11 +138,8 @@
   }
   
   .projects-list {
+    grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-  
-  .project-item {
-    padding-left: 2.5rem;
   }
   
   .project-header {
