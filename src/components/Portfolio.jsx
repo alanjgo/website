@@ -33,8 +33,8 @@ export function Portfolio() {
         screenshots: [
           {
             id: 'vibin-1',
-            thumbnail: '/screenshots/screen1_vibin.svg',
-            full: '/screenshots/screen1_vibin.svg',
+            thumbnail: '/screenshots/screen1_vibin.png',
+            full: '/screenshots/screen1_vibin.png',
             alt: 'Screenshot Vibin',
           },
           {
@@ -218,12 +218,20 @@ export function Portfolio() {
             className="screenshot-lightbox__content"
             onClick={(event) => event.stopPropagation()}
           >
+            <button
+              type="button"
+              className="screenshot-lightbox__close"
+              onClick={closeScreenshot}
+              aria-label="Fermer le screenshot"
+            >
+              ✕
+            </button>
             {activeProjectScreenshots.length > 1 && (
               <button
                 type="button"
                 className="screenshot-lightbox__nav screenshot-lightbox__nav--prev"
                 onClick={() => navigateScreenshot(-1)}
-                aria-label="Voir la capture précédente"
+                aria-label="Voir le screenshot précédent"
               >
                 ‹
               </button>
