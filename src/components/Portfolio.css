@@ -132,6 +132,87 @@
   font-size: 0.95rem;
 }
 
+.project-screenshots {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-screenshot-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-screenshot-button:hover,
+.project-screenshot-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.16);
+  outline: none;
+}
+
+.project-screenshot {
+  display: block;
+  width: 8rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.screenshot-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 8, 10, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+.screenshot-lightbox__content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screenshot-lightbox__image {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 0.75rem;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+}
+
+.screenshot-lightbox__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border: none;
+  background: none;
+  color: #fafafa;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem;
+}
+
+.screenshot-lightbox__close:hover,
+.screenshot-lightbox__close:focus-visible {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: none;
+}
+
 @media (max-width: 768px) {
   .portfolio {
     padding: 2rem 0;
@@ -161,5 +242,14 @@
   
   .section-title {
     margin-bottom: 0.75rem;
+  }
+
+  .project-screenshot {
+    width: 6.5rem;
+    height: 4.25rem;
+  }
+
+  .screenshot-lightbox {
+    padding: 1.5rem;
   }
 }
