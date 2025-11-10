@@ -319,10 +319,17 @@
   }
 
   .screenshot-lightbox__nav {
-    display: none;
-    width: 2.25rem;
-    height: 2.25rem;
-    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .screenshot-lightbox__nav--prev {
+    left: 0rem;
+  }
+
+  .screenshot-lightbox__nav--next {
+    right: 0rem;
   }
 
   .screenshot-lightbox__close {
