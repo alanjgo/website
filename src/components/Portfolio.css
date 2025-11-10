@@ -28,6 +28,14 @@
   flex-direction: column;
 }
 
+.screenshot-lightbox__image {
+  width: 100%;
+  height: auto;
+  max-width: min(100%, 48rem);
+  max-height: 80vh;
+  object-fit: contain;
+}
+
 .projects-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
