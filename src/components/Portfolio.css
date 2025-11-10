@@ -283,29 +283,29 @@
   .portfolio {
     padding: 2rem 0;
   }
-  
+
   .projects-list {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .project-header {
     gap: 0.5rem;
   }
-  
+
   .project-logo {
     width: 1.25rem;
     height: 1.25rem;
   }
-  
+
   .project-title {
     font-size: 0.9rem;
   }
-  
+
   .section-header {
     margin-bottom: 2rem;
   }
-  
+
   .section-title {
     margin-bottom: 0.75rem;
   }
@@ -313,16 +313,25 @@
   .project-screenshot {
     gap: 0.5rem;
   }
-  }
 
   .screenshot-lightbox {
     padding: 1.5rem;
   }
 
   .screenshot-lightbox__nav {
+    display: none;
     width: 2.25rem;
     height: 2.25rem;
     font-size: 1.5rem;
+  }
+
+  .screenshot-lightbox__close {
+    display: flex;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.25rem;
   }
 
   .screenshot-lightbox__dots {
@@ -332,4 +341,5 @@
   .screenshot-lightbox__dot {
     width: 0.45rem;
     height: 0.45rem;
+  }
 }
