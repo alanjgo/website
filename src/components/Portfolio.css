@@ -205,7 +205,7 @@
   justify-content: center;
   font-size: 1.75rem;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .screenshot-lightbox__nav--prev {
@@ -226,17 +226,17 @@
 .screenshot-lightbox__close {
   position: absolute;
   top: -2.5rem;
-  right: 0;
+  right: -0.5rem;
   border: none;
   background: rgba(15, 17, 19, 0.65);
   color: #fafafa;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 9999px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.2s ease;
 }
@@ -246,12 +246,6 @@
   background: rgba(20, 22, 24, 0.85);
   transform: scale(1.05);
   outline: none;
-}
-
-@media (min-width: 769px) {
-  .screenshot-lightbox__close {
-    display: none !important;
-  }
 }
 
 .screenshot-lightbox__dots {
@@ -326,19 +320,9 @@
   }
 
   .screenshot-lightbox__nav {
-    display: none;
     width: 2.25rem;
     height: 2.25rem;
     font-size: 1.5rem;
-  }
-
-  .screenshot-lightbox__close {
-    display: flex;
-    top: -1.75rem;
-    right: -0.5rem;
-    width: 2.25rem;
-    height: 2.25rem;
-    font-size: 1.25rem;
   }
 
   .screenshot-lightbox__dots {
