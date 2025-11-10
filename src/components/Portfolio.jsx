@@ -13,14 +13,20 @@ export function Portfolio() {
         screenshots: [
           {
             id: 'lumi-1',
-            thumbnail: '/screenshots/screen1_lumi.svg',
-            full: '/screenshots/screen1_lumi.svg',
+            thumbnail: '/screenshots/screen1_lumi.png',
+            full: '/screenshots/screen1_lumi.png',
             alt: 'Screenshot Lumi',
           },
           {
             id: 'lumi-2',
-            thumbnail: '/screenshots/screen2_lumi.svg',
-            full: '/screenshots/screen2_lumi.svg',
+            thumbnail: '/screenshots/screen2_lumi.png',
+            full: '/screenshots/screen2_lumi.png',
+            alt: 'Screenshot Lumi',
+          },
+          {
+            id: 'lumi-3',
+            thumbnail: '/screenshots/screen3_lumi.png',
+            full: '/screenshots/screen3_lumi.png',
             alt: 'Screenshot Lumi',
           },
         ],
@@ -39,11 +45,10 @@ export function Portfolio() {
           },
           {
             id: 'vibin-2',
-            thumbnail: '/screenshots/AppStore-F.svg',
-            full: '/screenshots/AppStore-F.svg',
+            thumbnail: '/screenshots/screen2_vibin.svg',
+            full: '/screenshots/screen2_vibin.svg',
             alt: 'Screenshot Vibin',
           },
-
           {
             id: 'vibin-3',
             thumbnail: '/screenshots/screen3_vibin.png',

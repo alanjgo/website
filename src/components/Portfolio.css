@@ -184,10 +184,8 @@
 .screenshot-lightbox__image {
   width: 100%;
   height: auto;
-  max-height: 90vh;
   object-fit: contain;
   border-radius: 0.75rem;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
 }
 
 .screenshot-lightbox__nav {
@@ -340,6 +338,7 @@
     height: 2.25rem;
     font-size: 1.25rem;
   }
+
 
   .screenshot-lightbox__dots {
     gap: 0.4rem;
