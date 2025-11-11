@@ -70,7 +70,7 @@
   .card__overlay {
     position: absolute;
     inset: 0;
-    background-image: url("@card_overlay.png");
+    background-image: url("@assets/card_overlay.png");
     opacity: 0.5;
     mix-blend-mode: multiply;
     filter: contrast(0.98) brightness(1.04);
