@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://card.jgoon.com" crossorigin="">
+    <link rel="preload" href="https://card.jgoon.com/Garamond%20Classico%20SC.ttf" as="font" type="font/ttf" crossorigin="">
+    <title>Alan Jego</title>
+  </head>
+  <body>
+    <div class="card-shell">
+      <div class="card-scene">
+        <article class="card" data-card="">
+          <div class="card__overlay" aria-hidden="true"></div>
+          <div class="card__inner">
+            <div class="card__top">
+              <span class="card__phone card__inline engraved-tight">alanjego@pm.me</span>
+              <div class="card__company">
+                <div class="card__company-line">
+                  <span class="card__company-word engraved-text">Staycation</span>
+                </div>
+                <span class="card__company-tagline engraved-text"></span>
+              </div>
+            </div>
+            <div class="card__center">
+              <div class="card__person">
+                <span class="card__person-first engraved-text">Alan</span>
+                <span class="card__person-last engraved-text">Jego</span>
+              </div>
+              <span class="card__title engraved-text">Product Manager</span>
+            </div>
+            <div class="card__bottom">
+              <span class="card__inline engraved-text card__bottom-line">
+                <span class="card__bottom-address engraved-text">Paris, France</span>
+                <span class="card__bottom-contact card__bottom-contact--fax">
+                  <span class="card__bottom-label engraved-text"></span>
+                  <span class="card__bottom-value engraved-text"></span>
+                </span>
+                <span class="card__bottom-contact card__bottom-contact--telex">
+                  <span class="card__bottom-label card__bottom-label--telex engraved-text"></span>
+                  <span class="card__bottom-value card__bottom-value--telex engraved-text"></span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <script>
+      const card = document.querySelector("[data-card]");
+      const cardScene = document.querySelector(".card-scene");
+
+      const config = {
+        maxRotateX: 18,
+        maxRotateY: 14,
+        maxRotateZ: 4,
+      };
+
+      function clamp(value, min, max) {
+        return Math.min(Math.max(value, min), max);
+      }
+
+      function applyTransform({ x, y }) {
+        const rect = cardScene.getBoundingClientRect();
+        const relativeX = (x - rect.left) / rect.width - 0.5;
+        const relativeY = (y - rect.top) / rect.height - 0.5;
+
+        const rotateY = clamp(
+          relativeX * 2 * config.maxRotateY,
+          -config.maxRotateY,
+          config.maxRotateY
+        );
+        const rotateX = clamp(
+          -relativeY * 2 * config.maxRotateX,
+          -config.maxRotateX,
+          config.maxRotateX
+        );
+        const rotateZ = clamp(
+          relativeX * 2 * config.maxRotateZ,
+          -config.maxRotateZ,
+          config.maxRotateZ
+        );
+
+        card.style.transform = `rotateX(${rotateX.toFixed(
+          2
+        )}deg) rotateY(${rotateY.toFixed(2)}deg) rotateZ(${rotateZ.toFixed(
+          2
+        )}deg)`;
+
+        const shadowX = (rotateY / config.maxRotateY) * 18;
+        const shadowY = (rotateX / config.maxRotateX) * 18;
+        card.style.boxShadow = `${-shadowX.toFixed(1)}px ${shadowY.toFixed(
+          1
+        )}px 45px rgba(47, 43, 37, 0.18)`;
+      }
+
+      function handlePointerMove(event) {
+        applyTransform({ x: event.clientX, y: event.clientY });
+      }
+
+      function handlePointerLeave() {
+        const rect = cardScene.getBoundingClientRect();
+        applyTransform({
+          x: rect.left + rect.width / 2,
+          y: rect.top + rect.height / 2,
+        });
+      }
+
+      cardScene.addEventListener("pointermove", handlePointerMove);
+      cardScene.addEventListener("pointerleave", handlePointerLeave);
+
+      handlePointerLeave();
+    </script>
+  
+
+</body></html>
