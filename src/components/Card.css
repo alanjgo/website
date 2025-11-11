@@ -266,7 +266,7 @@
     justify-content: flex-end;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1500px) {
     .card-shell {
       display: none;
     }

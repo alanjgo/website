@@ -78,7 +78,7 @@
   line-height: 1.6;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 2400px) {
   .hero {
     cursor: default;
   }

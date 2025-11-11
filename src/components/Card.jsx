@@ -98,11 +98,43 @@ export function Card({ isVisible = false, onClick }) {
     }
   }, [isVisible])
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!isVisible || !onClick) return
+
+      const cardShellElement = cardShellRef.current
+      const heroElement = document.querySelector('.hero')
+      
+      // Vérifier si le clic est en dehors de la Card et en dehors du Hero
+      if (cardShellElement && heroElement) {
+        const isClickInsideCard = cardShellElement.contains(event.target)
+        const isClickInsideHero = heroElement.contains(event.target)
+        
+        if (!isClickInsideCard && !isClickInsideHero) {
+          onClick()
+        }
+      }
+    }
+
+    if (isVisible) {
+      // Utiliser capture phase pour intercepter les clics avant qu'ils ne se propagent
+      document.addEventListener('mousedown', handleClickOutside, true)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside, true)
+    }
+  }, [isVisible, onClick])
+
   return (
     <div 
       ref={cardShellRef}
       className={`card-shell ${isVisible ? 'card-visible' : ''}`}
-      onClick={onClick}
+      onClick={(e) => {
+        // Empêcher la propagation pour éviter que le clic sur la Card déclenche handleClickOutside
+        e.stopPropagation()
+        if (onClick) onClick()
+      }}
     >
       <div
         ref={cardSceneRef}
