@@ -1,50 +1,23 @@
-import React, { useState } from 'react'
-import { Hero } from './components/Hero'
-import { Card } from './components/Card'
-import { Portfolio } from './components/Portfolio'
-import { Experience } from './components/Experience'
-import { Contact } from './components/Contact'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Home } from './components/Home'
+import { ReadingList } from './components/ReadingList'
+import { Footer } from './components/Footer'
+import { ScrollToTop } from './components/ScrollToTop'
 import { Analytics } from '@vercel/analytics/react'
 
 function App() {
-  const [isCardVisible, setIsCardVisible] = useState(false)
-  const [isCardClicked, setIsCardClicked] = useState(false)
-
-  const handleMouseEnter = () => {
-    setIsCardVisible(true)
-    setIsCardClicked(false)
-  }
-
-  const handleMouseLeave = () => {
-    if (!isCardClicked) {
-      setIsCardVisible(false)
-    }
-  }
-
-  const handleClick = () => {
-    setIsCardVisible(true)
-    setIsCardClicked(true)
-  }
-
   return (
-    <main className="app">
-      <Hero 
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        onClick={handleClick}
-      />
-      <Contact /> 
-      <Card 
-        isVisible={isCardVisible} 
-        onClick={() => {
-          setIsCardVisible(false)
-          setIsCardClicked(false)
-        }} 
-      />
-      <Experience />
-      <Portfolio />
-      <Analytics />
-    </main>
+    <Router>
+      <ScrollToTop />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/reading-list" element={<ReadingList />} />
+        </Routes>
+        <Footer />
+        <Analytics />
+      </main>
+    </Router>
   )
 }
 

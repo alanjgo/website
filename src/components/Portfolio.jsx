@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import './Portfolio.css'
 
 export function Portfolio() {
@@ -33,7 +33,7 @@ export function Portfolio() {
       },
       {
         id: 2,
-        title:"Vibin",
+        title: "Vibin",
         description: "Your social app for your close friends. Guess which of your friends published a vibe.",
         logo: "/vibin.png",
         screenshots: [
@@ -175,39 +175,39 @@ export function Portfolio() {
           <div className="projects-list">
             {projects.map((project) => (
               <div key={project.id} className="project-item">
-                  <div className="project-header">
-                    <div className="project-title">{project.title}</div>
-                    <div className="project-info">
-                      <div className="project-logo">
-                          <img src={project.logo} alt={`${project.title} logo`} />
-                      </div>
+                <div className="project-header">
+                  <div className="project-title">{project.title}</div>
+                  <div className="project-info">
+                    <div className="project-logo">
+                      <img src={project.logo} alt={`${project.title} logo`} />
                     </div>
                   </div>
-                  <p className="project-description">{project.description}</p>
-                  {project.screenshots && project.screenshots.length > 0 && (
-                    <div className="project-screenshots">
-                      {project.screenshots.map((screenshot, index) => {
-                        const screenshotAlt = resolveScreenshotAlt(project.title, screenshot.alt)
-
-                        return (
-                          <button
-                            key={screenshot.id}
-                            type="button"
-                            className="project-screenshot-button"
-                            onClick={() => openScreenshot(project.id, index)}
-                            aria-label={`Afficher l'image ${screenshotAlt}`}
-                          >
-                            <img
-                              src={screenshot.thumbnail || screenshot.full}
-                              alt={screenshotAlt}
-                              className="project-screenshot"
-                            />
-                          </button>
-                        )
-                      })}
-                    </div>
-                  )}
                 </div>
+                <p className="project-description">{project.description}</p>
+                {project.screenshots && project.screenshots.length > 0 && (
+                  <div className="project-screenshots">
+                    {project.screenshots.map((screenshot, index) => {
+                      const screenshotAlt = resolveScreenshotAlt(project.title, screenshot.alt)
+
+                      return (
+                        <button
+                          key={screenshot.id}
+                          type="button"
+                          className="project-screenshot-button"
+                          onClick={() => openScreenshot(project.id, index)}
+                          aria-label={`Afficher l'image ${screenshotAlt}`}
+                        >
+                          <img
+                            src={screenshot.thumbnail || screenshot.full}
+                            alt={screenshotAlt}
+                            className="project-screenshot"
+                          />
+                        </button>
+                      )
+                    })}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         </div>
@@ -265,9 +265,8 @@ export function Portfolio() {
                     <button
                       key={`screenshot-dot-${dotIndex}`}
                       type="button"
-                      className={`screenshot-lightbox__dot${
-                        isActive ? ' screenshot-lightbox__dot--active' : ''
-                      }`}
+                      className={`screenshot-lightbox__dot${isActive ? ' screenshot-lightbox__dot--active' : ''
+                        }`}
                       onClick={() => goToScreenshot(dotIndex)}
                       aria-label={`Aller à la capture ${dotIndex + 1}`}
                       aria-current={isActive ? 'true' : 'false'}

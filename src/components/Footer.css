@@ -1,0 +1,21 @@
+.footer {
+    padding: 2rem 0;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #2563eb;
+}

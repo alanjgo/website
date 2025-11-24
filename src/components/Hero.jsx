@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Hero.css'
 
 export function Hero({ onMouseEnter, onMouseLeave, onClick }) {
@@ -9,8 +9,8 @@ export function Hero({ onMouseEnter, onMouseLeave, onClick }) {
   }, [])
 
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="hero"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -23,14 +23,14 @@ export function Hero({ onMouseEnter, onMouseLeave, onClick }) {
           </div>
           <h1 className="hero-title">Alan Jego</h1>
         </div>
-        
+
         <p className="hero-subtitle">
           I like building smooth experiences on digital products.
         </p>
 
         <div className="hero-description">
           <p className="hero-text">
-            As a Product Manager, I'm always looking to find the best way to meet business objectives and make the best product for users.
+            As a Product Manager, I&apos;m always looking to find the best way to meet business objectives and make the best product for users.
           </p>
 
           <p className="hero-text-secondary">
