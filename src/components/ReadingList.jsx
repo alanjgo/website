@@ -1,9 +1,11 @@
 import { useState, useMemo } from 'react'
+import { Heart } from 'lucide-react'
 import { books } from '../data/books'
 import './ReadingList.css'
 
 export function ReadingList() {
     const [filter] = useState('All')
+    const [showFavorites, setShowFavorites] = useState(false)
 
     // Extract unique categories
     /* const categories = useMemo(() => {
@@ -12,13 +14,31 @@ export function ReadingList() {
     }, []) */
 
     const filteredBooks = useMemo(() => {
-        if (filter === 'All') return books
-        return books.filter(book => book.category === filter)
-    }, [filter])
+        let result = books
+
+        if (filter !== 'All') {
+            result = result.filter(book => book.category === filter)
+        }
+
+        if (showFavorites) {
+            result = result.filter(book => book.isGoldmine)
+        }
+
+        return result
+    }, [filter, showFavorites])
 
     return (
         <section className="reading-list-container">
-            <h2 className="reading-list-title">Reading List</h2>
+            <div className="reading-list-header">
+                <h2 className="reading-list-title">Alan's Reading List</h2>
+                <button
+                    className={`filter-button ${showFavorites ? 'active' : ''}`}
+                    onClick={() => setShowFavorites(!showFavorites)}
+                >
+                    <span className="filter-text">{showFavorites ? 'Show All' : 'Show Favorites'}</span>
+                    <Heart size={16} fill={showFavorites ? "#dc2626" : "none"} color={showFavorites ? "#dc2626" : "currentColor"} />
+                </button>
+            </div>
 
             <div className="reading-list-grid">
                 {filteredBooks.map((book, index) => (
@@ -40,7 +60,7 @@ export function ReadingList() {
                                 </div>
                             )}
                             {book.isGoldmine && (
-                                <span className="goldmine-badge" title="Goldmine">⭐️</span>
+                                <Heart className="favorite-badge" size={20} fill="#dc2626" color="#dc2626" />
                             )}
                         </div>
 

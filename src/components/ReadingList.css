@@ -5,13 +5,54 @@
 }
 
 .reading-list-title {
-  font-family: 'Inter', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-  padding: 0 2rem;
+  font-size: 1.5rem;
   color: #fafafa;
   letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+
+.reading-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.filter-button:hover svg {
+  stroke: #fff;
+}
+
+.filter-button:not(.active):hover svg {
+  fill: #dc2626;
+  stroke: #dc2626;
+}
+
+.filter-button.active:hover svg {
+  fill: none;
+}
+
+.filter-button.active {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 
 .reading-list-grid {
@@ -38,10 +79,6 @@
   overflow: hidden;
 }
 
-.book-card:hover .book-cover-container {
-  transform: translateY(-6px);
-}
-
 .book-cover-image {
   width: 100%;
   height: 100%;
@@ -61,11 +98,10 @@
   font-weight: 700;
 }
 
-.goldmine-badge {
+.favorite-badge {
   position: absolute;
   top: 8px;
   right: 8px;
-  font-size: 1rem;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
   z-index: 2;
 }
@@ -100,11 +136,39 @@
   .reading-list-grid {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 2rem 1rem;
-    padding: 0 1rem;
+    padding: 0;
   }
 
-  .reading-list-title {
-    padding: 0 1rem;
-    font-size: 1.75rem;
+  .reading-list-header {
+    padding: 0;
+  }
+
+  .filter-button {
+    background-color: transparent !important;
+    border: none;
+  }
+
+  .filter-button:hover {
+    background: none;
+    border: none;
+  }
+
+  .filter-button svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .filter-text {
+    display: none;
+  }
+
+  .filter-button.active:hover svg {
+    fill: #dc2626 !important;
+    stroke: #dc2626 !important;
+  }
+
+  .filter-button:not(.active):hover svg {
+    fill: none !important;
+    stroke: #fff !important;
   }
 }

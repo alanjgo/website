@@ -1,7 +1,7 @@
 export const books = [
   {
     "title": "La fin de l’homme rouge",
-    "author": "Svetlana Aleksievitch",
+    "author": "Svetlana Alexievitch",
     "category": "Roman",
     "isGoldmine": true,
     "cover": "https://actes-sud.fr/sites/default/files/couvertures/9782330066840.jpg"
@@ -210,7 +210,7 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/71EYVxoyKwL._AC_UF1000,1000_QL80_.jpg"
   },
   {
-    "title": "Climat : comment éviter un désastre: Les solutions actuelles",
+    "title": "Climat : comment éviter un désastre",
     "author": "Bill Gates",
     "category": "Société",
     "isGoldmine": false,
@@ -455,13 +455,6 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=Vg4oDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "Manuel d’Epictete",
-    "author": "Marc-Aurèle",
-    "category": "Philosophie",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=NOJ1DwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
     "title": "Pensées pour moi-même",
     "author": "Marc-Aurèle",
     "category": "Philosophie",
@@ -472,7 +465,7 @@ export const books = [
     "title": "De purs hommes",
     "author": "Mohammed Mbouga Sarr",
     "category": "Roman",
-    "isGoldmine": false,
+    "isGoldmine": true,
     "cover": "https://m.media-amazon.com/images/I/71KTTvkClIL.jpg"
   },
   {
@@ -486,7 +479,7 @@ export const books = [
     "title": "Des hommes sans femmes",
     "author": "Haruki Murakami",
     "category": "Roman",
-    "isGoldmine": false,
+    "isGoldmine": true,
     "cover": "https://books.google.com/books/content?id=qxYODgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
@@ -507,7 +500,7 @@ export const books = [
     "title": "Non ce n’était pas mieux avant",
     "author": "Johan Norberg",
     "category": "Société",
-    "isGoldmine": false,
+    "isGoldmine": true,
     "cover": "https://books.google.com/books/content?id=yxQkDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
@@ -542,14 +535,14 @@ export const books = [
     "title": "1984",
     "author": "Goerges Orwell",
     "category": "Roman",
-    "isGoldmine": false,
+    "isGoldmine": true,
     "cover": "https://m.media-amazon.com/images/I/61HkdyBpKOL._AC_UF894,1000_QL80_.jpg"
   },
   {
     "title": "La ferme des animaux",
     "author": "Goerges Orwell",
     "category": "Roman",
-    "isGoldmine": false,
+    "isGoldmine": true,
     "cover": "https://m.media-amazon.com/images/I/91SNkSmLz7L._AC_UF1000,1000_QL80_.jpg"
   },
   {
@@ -577,7 +570,7 @@ export const books = [
     "title": "L’existentialisme est un humanisme",
     "author": "Jean-Paul Sartre",
     "category": "Philosophie",
-    "isGoldmine": false,
+    "isGoldmine": true,
     "cover": "https://m.media-amazon.com/images/I/816KHX9SS4L._UF1000,1000_QL80_.jpg"
   },
   {
@@ -808,7 +801,7 @@ export const books = [
     "title": "Veiller sur elle",
     "author": "Jean-Baptiste Andrea",
     "category": "Roman",
-    "isGoldmine": false,
+    "isGoldmine": true,
     "cover": "https://books.google.com/books/content?id=dEHLEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
@@ -822,7 +815,7 @@ export const books = [
     "title": "Ceux qui restent",
     "author": "Benoît Coquard",
     "category": "Société",
-    "isGoldmine": false,
+    "isGoldmine": true,
     "cover": "https://m.media-amazon.com/images/I/81QXrDzTy-L._UF1000,1000_QL80_.jpg"
   },
   {
