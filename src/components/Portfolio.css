@@ -185,6 +185,7 @@
   max-width: 90vw;
   max-height: 90vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -255,10 +256,8 @@
 }
 
 .screenshot-lightbox__dots {
-  position: absolute;
-  bottom: 0.75rem;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -321,7 +320,7 @@
   }
 
   .screenshot-lightbox {
-    padding: 1.5rem;
+    padding: 1.5rem 3rem;
   }
 
   .screenshot-lightbox__nav {
@@ -331,17 +330,17 @@
   }
 
   .screenshot-lightbox__nav--prev {
-    left: 0rem;
+    left: calc(-2.5rem);
   }
 
   .screenshot-lightbox__nav--next {
-    right: 0rem;
+    right: calc(-2.5rem);
   }
 
   .screenshot-lightbox__close {
     display: flex;
-    top: 0.5rem;
-    right: 0.5rem;
+    top: -3rem;
+    right: 0;
     width: 2.25rem;
     height: 2.25rem;
     font-size: 1.25rem;
