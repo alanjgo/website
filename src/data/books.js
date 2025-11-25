@@ -985,5 +985,47 @@ export const books = [
     "category": "Roman",
     "isGoldmine": false,
     "cover": "https://books.google.com/books/content?id=KgWQEQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "How the world really works",
+    "author": "Vaclav Smil",
+    "category": "Sciences",
+    "isGoldmine": true,
+    "cover": "https://m.media-amazon.com/images/I/71f0iM7qmjL._UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "La 6e extinction",
+    "author": "Elizabeth Kolbert",
+    "category": "Sciences",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/71Jt3z1olpL.jpg"
+  },
+  {
+    "title": "Condition de l'homme moderne",
+    "author": "Hannah Arendt",
+    "category": "Philosophie",
+    "isGoldmine": false,
+    "cover": "https://images.epagine.fr/321/9782253101321_1_75.jpg"
+  },
+  {
+    "title": "Behave",
+    "author": "Robert Sapolsky",
+    "category": "Sciences",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/71rP6KBGM8L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "Sperm Wars: Les secrets de nos comportements amoureux",
+    "author": "Robin Baker",
+    "category": "Sciences",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/61F6we3yxYL._SY522_.jpg"
+  },
+  {
+    "title": "Vous plaisantez Monsieur Tanner",
+    "author": "Jean-Paul Dubois",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/61tXCWjo+9L._AC_UF1000,1000_QL80_.jpg"
   }
-]
+];
