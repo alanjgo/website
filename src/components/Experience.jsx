@@ -59,7 +59,7 @@ export function Experience() {
                     <div className="company-info">
                       <p className="company-name">{exp.company}</p>
                       <div className="company-logo">
-                        <a href={exp.website} target="_blank" rel="noopener noreferrer" title={`Voir le site de ${exp.company}`}>
+                        <a href={exp.website} target="_blank" rel="noopener noreferrer" title={`See ${exp.company} website`}>
                           <img src={exp.logo} alt={`${exp.company} logo`} />
                         </a>
                       </div>
