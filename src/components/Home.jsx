@@ -4,6 +4,7 @@ import { Card } from './Card'
 import { Portfolio } from './Portfolio'
 import { Experience } from './Experience'
 import { Contact } from './Contact'
+import { CardReactionGif } from './CardReactionGif'
 
 export function Home() {
     const [isCardVisible, setIsCardVisible] = useState(false)
@@ -40,6 +41,7 @@ export function Home() {
                     setIsCardClicked(false)
                 }}
             />
+            <CardReactionGif isVisible={isCardVisible} />
             <Experience />
             <Portfolio />
         </div>
