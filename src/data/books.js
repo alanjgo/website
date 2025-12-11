@@ -7,6 +7,20 @@ export const books = [
     "cover": "https://actes-sud.fr/sites/default/files/couvertures/9782330066840.jpg"
   },
   {
+    "title": "La Supplication",
+    "author": "Svetlana Alexievitch",
+    "category": "Société",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=f6ugAgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Veiller sur elle",
+    "author": "Jean-Baptiste Andrea",
+    "category": "Roman",
+    "isGoldmine": true,
+    "cover": "https://books.google.com/books/content?id=dEHLEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
     "title": "Gandhi ou l’éveil des humiliés",
     "author": "Jacques Attali",
     "category": "Biograhie",
@@ -14,11 +28,32 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/81X2v371rBL.jpg"
   },
   {
-    "title": "Les belles images",
-    "author": "Simone de Beauvoir",
+    "title": "Histoire des médias",
+    "author": "Jacques Attali",
+    "category": "Société",
+    "isGoldmine": true,
+    "cover": "https://books.google.com/books/content?id=6o4REAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Condition de l'homme moderne",
+    "author": "Hannah Arendt",
+    "category": "Philosophie",
+    "isGoldmine": false,
+    "cover": "https://images.epagine.fr/321/9782253101321_1_75.jpg"
+  },
+  {
+      "title": "Sperm Wars: Les secrets de nos comportements amoureux",
+      "author": "Robin Baker",
+      "category": "Sciences",
+      "isGoldmine": false,
+      "cover": "https://m.media-amazon.com/images/I/61F6we3yxYL._SY522_.jpg"
+  },
+  {
+    "title": "La Chambre de Giovanni",
+    "author": "James Baldwin",
     "category": "Roman",
     "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/71hGUufpWML._AC_UF1000,1000_QL80_.jpg"
+    "cover": "https://books.google.com/books/content?id=MA0BEQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
     "title": "99 Francs",
@@ -35,7 +70,7 @@ export const books = [
     "cover": "https://media.hachette.fr/fit-in/780x1280/imgArticle/LGFLIVREDEPOCHE/2018/9782253166863-001-X.jpeg?source=web"
   },
   {
-    "title": "L’égoïste romantique",
+    "title": "L'égoïste romantique",
     "author": "Frederic Beigbeder",
     "category": "Roman",
     "isGoldmine": false,
@@ -63,7 +98,7 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/81exrHQXrrL._AC_UF350,350_QL50_.jpg"
   },
   {
-    "title": "Manuel à l’usage des femmes de ménage",
+    "title": "Manuel à l'usage des femmes de ménage",
     "author": "Lucia Berlin",
     "category": "Roman",
     "isGoldmine": false,
@@ -77,7 +112,21 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=Y0VUEQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "Journal d’un vieux déguelasse",
+    "title": "Fictions",
+    "author": "Jorge Borges",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://images.epagine.fr/153/9782072798153_1_75.jpg"
+  },
+{
+    "title": "L'étrange défaite",
+    "author": "Marc Bloch",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=eN88EQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Journal d'un vieux déguelasse",
     "author": "Charles Bukowski",
     "category": "Roman",
     "isGoldmine": false,
@@ -91,11 +140,32 @@ export const books = [
     "cover": "https://media.hachette.fr/fit-in/780x1280/imgArticle/GRASSETFASQUELLE/2015/9782246809951-X.jpg?source=web"
   },
   {
+    "title": "Pulp",
+    "author": "Charles Bukowski",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=Zy79yDSxAo8C&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
     "title": "Women",
     "author": "Charles Bukowski",
     "category": "Roman",
     "isGoldmine": false,
     "cover": "https://m.media-amazon.com/images/I/71G1RKKDzmL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "Loved",
+    "author": "Marty Cagan",
+    "category": "Business",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/71JGnUdqC5L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "Empowered",
+    "author": "Marty Cagan",
+    "category": "Business",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=vdsMEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
     "title": "Internet rend-il bête ?",
@@ -126,7 +196,7 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=fFCjDQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "L’alchimiste",
+    "title": "L'alchimiste",
     "author": "Paulo Coelho",
     "category": "Roman",
     "isGoldmine": false,
@@ -140,11 +210,11 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/712t4hBwMrL._AC_UF1000,1000_QL80_.jpg"
   },
   {
-    "title": "Big data : la révolution des données est en marche",
-    "author": "Kenneth Cukier",
-    "category": "Technologies",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=RZzbAgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+    "title": "Ceux qui restent",
+    "author": "Benoît Coquard",
+    "category": "Société",
+    "isGoldmine": true,
+    "cover": "https://m.media-amazon.com/images/I/81QXrDzTy-L._UF1000,1000_QL80_.jpg"
   },
   {
     "title": "La révolution matérielle",
@@ -154,6 +224,20 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=2D5vDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
+    "title": "Cher connard",
+    "author": "Virginie Despentes",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=eRp4EAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+ {
+    "title": "Le commencement de l'infini",
+    "author": "David Deutsch",
+    "category": "Sciences",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/71A3tOsumPS._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
     "title": "Crime et chatiments",
     "author": "Dostoïevski",
     "category": "Roman",
@@ -161,11 +245,25 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/81+1kkJQz+L.jpg"
   },
   {
+    "title": "L'Origine des larmes",
+    "author": "Jean‑Paul Dubois",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://www.lenouveleconomiste.fr/wp-content/uploads/2024/04/lorigine-des-larmes.jpg"
+  },
+  {
     "title": "Tout le monde n'habite pas le monde de la même façon",
     "author": "Jean-Paul Dubois",
     "category": "Roman",
     "isGoldmine": true,
     "cover": "https://m.media-amazon.com/images/I/61jAMKZ7sGL.jpg"
+  },
+  {
+    "title": "Vous plaisantez Monsieur Tanner",
+    "author": "Jean-Paul Dubois",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/61tXCWjo+9L._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "title": "American psycho",
@@ -189,6 +287,20 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=z2mNDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
+    "title": "Lettre à Ménécée",
+    "author": "Epicure",
+    "category": "Philosophie",
+    "isGoldmine": true,
+    "cover": "https://books.google.com/books/content?id=3G1JCAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Retour à Reims",
+    "author": "Didier Eribon",
+    "category": "Société",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/51kBz-39Y9L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
     "title": "Moi, Christiane F., 13 ans, droguée, prostituée...",
     "author": "Christiane F.",
     "category": "Biograhie",
@@ -208,6 +320,34 @@ export const books = [
     "category": "Roman",
     "isGoldmine": false,
     "cover": "https://m.media-amazon.com/images/I/71EYVxoyKwL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "Je selfie donc je suis",
+    "author": "Elsa Godart",
+    "category": "Société",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=NVsDDAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Nos séparations",
+    "author": "David Foenkinos",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=9LQKOLxsiIEC&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "L'avènement des machines",
+    "author": "Martin Ford",
+    "category": "Société",
+    "isGoldmine": false,
+    "cover": "https://boutique.fypeditions.com/cdn/shop/products/couverture-LavenementDesMachines-Ford-FYP-OK_grande.jpg?v=1538825679"
+  },
+  {
+    "title": "Toussaint Louverture",
+    "author": "Alain Foix",
+    "category": "Biograhie",
+    "isGoldmine": false,
+    "cover": "https://ecx.images-amazon.com/images/I/51dr6w94tOL._SX195_.jpg"
   },
   {
     "title": "Climat : comment éviter un désastre",
@@ -231,18 +371,18 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=rGqi9wBsOUAC&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "Je selfie donc je suis",
-    "author": "Elsa Godart",
-    "category": "Société",
+    "title": "Vivre vite",
+    "author": "Brigitte Giraud",
+    "category": "Roman",
     "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=NVsDDAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+    "cover": "https://img.livraddict.com/covers/573/573191//couv7695880.jpg"
   },
   {
-    "title": "Lettre à Ménécée",
-    "author": "Epicure",
-    "category": "Philosophie",
-    "isGoldmine": true,
-    "cover": "https://books.google.com/books/content?id=3G1JCAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+    "title": "Le story-telling en marketing",
+    "author": "Seth Godin",
+    "category": "Communication",
+    "isGoldmine": false,
+    "cover": "https://images2.medimops.eu/product/2c2f95/M02840016990-source.jpg"
   },
   {
     "title": "Bullshit Jobs",
@@ -257,13 +397,6 @@ export const books = [
     "category": "Développement personnel",
     "isGoldmine": false,
     "cover": "https://covers.openlibrary.org/b/id/6424160-L.jpg"
-  },
-  {
-    "title": "Le story-telling en marketing",
-    "author": "Seth Godin",
-    "category": "Communication",
-    "isGoldmine": false,
-    "cover": "https://images2.medimops.eu/product/2c2f95/M02840016990-source.jpg"
   },
   {
     "title": "No Rules Rules",
@@ -287,6 +420,13 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/71h6VqTc5mL._AC_UF1000,1000_QL80_.jpg"
   },
   {
+    "title": "Extension du domaine de la lutte",
+    "author": "Michel Houellebecq",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/61AwRYCwMpL.jpg"
+  },
+  {
     "title": "La carte et le territoire",
     "author": "Michel Houellebecq",
     "category": "Roman",
@@ -301,7 +441,7 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/61hxWW6VDjL._AC_UF1000,1000_QL80_.jpg"
   },
   {
-    "title": "La possibilité d’une île",
+    "title": "La possibilité d'une île",
     "author": "Michel Houellebecq",
     "category": "Roman",
     "isGoldmine": false,
@@ -343,6 +483,41 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/71iZzLwuZML.jpg"
   },
   {
+    "title": "Île",
+    "author": "Siri Ranva Hjelm Jacobsen",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=KKDODwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "L'Iliade et l'Odyssée",
+    "author": "Homère",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://images.epagine.fr/999/9782221075999_1_75.jpg"
+  },
+  {
+    "title": "Hard Things",
+    "author": "Ben Horowitz",
+    "category": "Business",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=AhxsDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "L'île des battements de cœur",
+    "author": "Laura Imai Messina",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=hsLxEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Elon Musk",
+    "author": "Walter Isaacson",
+    "category": "Biograhie",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/81Kaj5++6pL.jpg"
+  },
+  {
     "title": "Steve Jobs",
     "author": "Walter Isaacson",
     "category": "Biograhie",
@@ -357,25 +532,18 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/71cGPNhA95L._AC_UF1000,1000_QL80_.jpg"
   },
   {
-    "title": "Île",
-    "author": "Siri Ranva Hjelm Jacobsen",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=KKDODwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Hard Things",
-    "author": "Ben Horowitz",
-    "category": "Business",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=AhxsDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
     "title": "La petite femelle",
     "author": "Philippe Jaenada",
     "category": "Roman",
     "isGoldmine": false,
     "cover": "https://covers.openlibrary.org/b/id/12807770-L.jpg"
+  },
+  {
+    "title": "La Métamorphose",
+    "author": "Franz Kafka",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/81qkcEOuP6L._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "title": "Le Personal MBA",
@@ -392,11 +560,18 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/615i7JSSShL._AC_UF1000,1000_QL80_.jpg"
   },
   {
-    "title": "L’art de la victoire",
+    "title": "L'art de la victoire",
     "author": "Phil Knight",
     "category": "Biograhie",
     "isGoldmine": false,
     "cover": "https://books.google.com/books/content?id=0GbGDQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "La 6e extinction",
+    "author": "Elizabeth Kolbert",
+    "category": "Sciences",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/71Jt3z1olpL.jpg"
   },
   {
     "title": "Le livre des décisions",
@@ -413,6 +588,20 @@ export const books = [
     "cover": "https://covers.openlibrary.org/b/id/13849450-L.jpg"
   },
   {
+    "title": "Maniac",
+    "author": "Benjamin Labatut",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0pBRGIvHYFXRj2ySz91hcTqCcLiRpioHe3Q&s"
+  },
+  {
+    "title": "Les Paysans français d'Ancien Régime",
+    "author": "Emmanuel Le Roy Ladurie",
+    "category": "Société",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=HWHZBQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
     "title": "L'âge du faire - Hacking, travail, anarchie",
     "author": "Michel Lallement",
     "category": "Société",
@@ -420,7 +609,7 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=lEgmBgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "L’anomalie",
+    "title": "L'anomalie",
     "author": "Hervé Le Tellier",
     "category": "Roman",
     "isGoldmine": false,
@@ -469,11 +658,39 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/71KTTvkClIL.jpg"
   },
   {
+    "title": "La Femme de ménage",
+    "author": "Freida McFadden",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=9sKdEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
     "title": "La voie",
     "author": "Edgar Morin",
     "category": "Technologies",
     "isGoldmine": false,
     "cover": "https://m.media-amazon.com/images/I/61VHBstcNfL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "1Q84 Livre 1",
+    "author": "Haruki Murakami",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=dqhMEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "1Q84 Livre 2",
+    "author": "Haruki Murakami",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=ZqhMEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "1Q84 Livre 3",
+    "author": "Haruki Murakami",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=XKhMEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
     "title": "Des hommes sans femmes",
@@ -483,7 +700,7 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=qxYODgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "L’almanack de Naval",
+    "title": "L'almanack de Naval",
     "author": "Naval Ravikant",
     "category": "Développement personnel",
     "isGoldmine": true,
@@ -497,7 +714,7 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=a3mrEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "Non ce n’était pas mieux avant",
+    "title": "Non ce n'était pas mieux avant",
     "author": "Johan Norberg",
     "category": "Société",
     "isGoldmine": true,
@@ -518,7 +735,7 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=FbstDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "Sapiens : Une brève histoire de l’humanité",
+    "title": "Sapiens : Une brève histoire de l'humanité",
     "author": "Yuval Noah Harari",
     "category": "Société",
     "isGoldmine": false,
@@ -560,6 +777,20 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=asEsEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
+    "title": "Les Aventures d'Arthur Gordon Pym",
+    "author": "Edgar Allan Poe",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/81OZ5mzhWmL.jpg"
+  },
+  {
+    "title": "L'Homme dé",
+    "author": "Luke Rhinehart",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=KwbXEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
     "title": "Tout le monde n'a pas eu la chance de rater ses études",
     "author": "Olivier Roland",
     "category": "Business",
@@ -567,7 +798,14 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=TW-rEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "L’existentialisme est un humanisme",
+    "title": "Behave",
+    "author": "Robert Sapolsky",
+    "category": "Sciences",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/71rP6KBGM8L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "L'existentialisme est un humanisme",
     "author": "Jean-Paul Sartre",
     "category": "Philosophie",
     "isGoldmine": true,
@@ -588,6 +826,20 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/91m6dOLvyTL.jpg"
   },
   {
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=KgWQEQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "How the world really works",
+    "author": "Vaclav Smil",
+    "category": "Sciences",
+    "isGoldmine": true,
+    "cover": "https://m.media-amazon.com/images/I/71f0iM7qmjL._UF1000,1000_QL80_.jpg"
+  },
+  {
     "title": "Mémoires vives",
     "author": "Edward Snowden",
     "category": "Société",
@@ -600,6 +852,20 @@ export const books = [
     "category": "Philosophie",
     "isGoldmine": false,
     "cover": "https://m.media-amazon.com/images/I/81ZuhGOCm9L._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "The Network State",
+    "author": "Balaji Srinivasan",
+    "category": "Société",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/71ZeCLHRzvL._UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "L'Étrange Cas du docteur Jekyll et de M. Hyde",
+    "author": "Robert Louis Stevenson",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=zMW46znkWiYC&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
     "title": "Antifragile",
@@ -630,6 +896,13 @@ export const books = [
     "cover": "https://covers.openlibrary.org/b/id/12019814-L.jpg"
   },
   {
+    "title": "Continuous Discovery Habits",
+    "author": "Teresa Torres",
+    "category": "Business",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/611QkQ+CXES.jpg"
+  },
+  {
     "title": "Dans les forêts de Sibérie",
     "author": "Sylvain Tesson",
     "category": "Roman",
@@ -642,6 +915,20 @@ export const books = [
     "category": "Roman",
     "isGoldmine": false,
     "cover": "https://books.google.com/books/content?id=niw4EAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Avec les fées",
+    "author": "Sylvain Tesson",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=MP7rEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Sur les chemins noirs",
+    "author": "Sylvain Tesson",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://books.google.com/books/content?id=KxaEDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
     "title": "Une vie à coucher dehors",
@@ -665,97 +952,6 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=JpDVDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "J’irai cracher sur vos tombes",
-    "author": "Boris Vian",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://www.planetebd.com/dynamicImages/album/cover/large/41/32/album-cover-large-41324.jpg"
-  },
-  {
-    "title": "L’écume des jours",
-    "author": "Boris Vian",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://covers.openlibrary.org/b/id/3169856-L.jpg"
-  },
-  {
-    "title": "Pourquoi nous dormons",
-    "author": "Matthew Walker",
-    "category": "Société",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=6YFqDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Mindfuck",
-    "author": "Christopher Wylie",
-    "category": "Société",
-    "isGoldmine": true,
-    "cover": "https://books.google.com/books/content?id=NqDODwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "L’étrange défaite",
-    "author": "Marc Bloch",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=eN88EQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Le commencement de l'infini",
-    "author": "David Deutsch",
-    "category": "Sciences",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/71A3tOsumPS._AC_UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "Fictions",
-    "author": "Jorge  Borges",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://images.epagine.fr/153/9782072798153_1_75.jpg"
-  },
-  {
-    "title": "La Supplication",
-    "author": "Svetlana Alexievitch",
-    "category": "Société",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=f6ugAgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Les Aventures d'Arthur Gordon Pym",
-    "author": "Edgar Allan Poe",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/81OZ5mzhWmL.jpg"
-  },
-  {
-    "title": "Loved",
-    "author": "Marty Cagan",
-    "category": "Business",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/71JGnUdqC5L._AC_UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "Empowered",
-    "author": "Marty Cagan",
-    "category": "Business",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=vdsMEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "L'Iliade et l'Odyssée",
-    "author": "Homère",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://images.epagine.fr/999/9782221075999_1_75.jpg"
-  },
-  {
-    "title": "L'avènement des machines",
-    "author": "Martin Ford",
-    "category": "Société",
-    "isGoldmine": false,
-    "cover": "https://boutique.fypeditions.com/cdn/shop/products/couverture-LavenementDesMachines-Ford-FYP-OK_grande.jpg?v=1538825679"
-  },
-  {
     "title": "Voyage au centre de la Terre",
     "author": "Jules Verne",
     "category": "Roman",
@@ -770,151 +966,11 @@ export const books = [
     "cover": "https://editions-beaurepaire.fr/_media/img/large/9782357673687.jpg"
   },
   {
-    "title": "Continuous Discovery Habits",
-    "author": "Teresa Torres",
-    "category": "Business",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/611QkQ+CXES.jpg"
-  },
-  {
-    "title": "Les Paysans français d'Ancien Régime",
-    "author": "Emmanuel Le Roy Ladurie",
-    "category": "Société",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=HWHZBQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Maniac",
-    "author": "Benjamin Labatut",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0pBRGIvHYFXRj2ySz91hcTqCcLiRpioHe3Q&s"
-  },
-  {
-    "title": "L'île des battements de cœur",
-    "author": "Laura Imai Messina",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=hsLxEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Veiller sur elle",
-    "author": "Jean-Baptiste Andrea",
-    "category": "Roman",
-    "isGoldmine": true,
-    "cover": "https://books.google.com/books/content?id=dEHLEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "L'Origine des larmes",
-    "author": "Jean‑Paul Dubois",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://www.lenouveleconomiste.fr/wp-content/uploads/2024/04/lorigine-des-larmes.jpg"
-  },
-  {
-    "title": "Ceux qui restent",
-    "author": "Benoît Coquard",
-    "category": "Société",
-    "isGoldmine": true,
-    "cover": "https://m.media-amazon.com/images/I/81QXrDzTy-L._UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "La Femme de ménage",
-    "author": "Freida McFadden",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=9sKdEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Pulp",
-    "author": "Charles Bukowski",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=Zy79yDSxAo8C&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
     "title": "Le Tour du monde en quatre-vingts jours",
     "author": "Jules Verne",
     "category": "Roman",
     "isGoldmine": false,
     "cover": "https://upload.wikimedia.org/wikipedia/commons/8/86/Verne_Tour_du_Monde.jpg"
-  },
-  {
-    "title": "La Métamorphose",
-    "author": "Franz Kafka",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/81qkcEOuP6L._AC_UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "1Q84 Livre 1",
-    "author": "Haruki Murakami",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=dqhMEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "1Q84 Livre 2",
-    "author": "Haruki Murakami",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=ZqhMEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "1Q84 Livre 3",
-    "author": "Haruki Murakami",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=XKhMEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Histoire des médias",
-    "author": "Jacques Attali",
-    "category": "Société",
-    "isGoldmine": true,
-    "cover": "https://books.google.com/books/content?id=6o4REAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Nos séparations",
-    "author": "David Foenkinos",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=9LQKOLxsiIEC&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "La Chambre de Giovanni",
-    "author": "James Baldwin",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=MA0BEQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Vivre vite",
-    "author": "Brigitte Giraud",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://img.livraddict.com/covers/573/573191//couv7695880.jpg"
-  },
-  {
-    "title": "Extension du domaine de la lutte",
-    "author": "Michel Houellebecq",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/61AwRYCwMpL.jpg"
-  },
-  {
-    "title": "Retour à Reims",
-    "author": "Didier Eribon",
-    "category": "Société",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/51kBz-39Y9L._AC_UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "Toussaint Louverture",
-    "author": "Alain Foix",
-    "category": "Biograhie",
-    "isGoldmine": false,
-    "cover": "https://ecx.images-amazon.com/images/I/51dr6w94tOL._SX195_.jpg"
   },
   {
     "title": "Paris au XXe siècle",
@@ -924,39 +980,25 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/81M-dTNL3yL.jpg"
   },
   {
-    "title": "Avec les fées",
-    "author": "Sylvain Tesson",
+    "title": "J'irai cracher sur vos tombes",
+    "author": "Boris Vian",
     "category": "Roman",
     "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=MP7rEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+    "cover": "https://www.planetebd.com/dynamicImages/album/cover/large/41/32/album-cover-large-41324.jpg"
   },
   {
-    "title": "Cher connard",
-    "author": "Virginie Despentes",
+    "title": "L'écume des jours",
+    "author": "Boris Vian",
     "category": "Roman",
     "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=eRp4EAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+    "cover": "https://covers.openlibrary.org/b/id/3169856-L.jpg"
   },
   {
-    "title": "Sur les chemins noirs",
-    "author": "Sylvain Tesson",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=KxaEDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Elon Musk",
-    "author": "Walter Isaacson",
-    "category": "Biograhie",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/81Kaj5++6pL.jpg"
-  },
-  {
-    "title": "The Network State",
-    "author": "Balaji Srinivasan",
+    "title": "Pourquoi nous dormons",
+    "author": "Matthew Walker",
     "category": "Société",
     "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/71ZeCLHRzvL._UF1000,1000_QL80_.jpg"
+    "cover": "https://books.google.com/books/content?id=6YFqDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
     "title": "Le Portrait de Dorian Gray",
@@ -966,66 +1008,10 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=Lo3cEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
-    "title": "L'Homme dé",
-    "author": "Luke Rhinehart",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=KwbXEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "L'Étrange Cas du docteur Jekyll et de M. Hyde",
-    "author": "Robert Louis Stevenson",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=zMW46znkWiYC&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "Frankenstein",
-    "author": "Mary Shelley",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://books.google.com/books/content?id=KgWQEQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
-  },
-  {
-    "title": "How the world really works",
-    "author": "Vaclav Smil",
-    "category": "Sciences",
+    "title": "Mindfuck",
+    "author": "Christopher Wylie",
+    "category": "Société",
     "isGoldmine": true,
-    "cover": "https://m.media-amazon.com/images/I/71f0iM7qmjL._UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "La 6e extinction",
-    "author": "Elizabeth Kolbert",
-    "category": "Sciences",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/71Jt3z1olpL.jpg"
-  },
-  {
-    "title": "Condition de l'homme moderne",
-    "author": "Hannah Arendt",
-    "category": "Philosophie",
-    "isGoldmine": false,
-    "cover": "https://images.epagine.fr/321/9782253101321_1_75.jpg"
-  },
-  {
-    "title": "Behave",
-    "author": "Robert Sapolsky",
-    "category": "Sciences",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/71rP6KBGM8L._AC_UF1000,1000_QL80_.jpg"
-  },
-  {
-    "title": "Sperm Wars: Les secrets de nos comportements amoureux",
-    "author": "Robin Baker",
-    "category": "Sciences",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/61F6we3yxYL._SY522_.jpg"
-  },
-  {
-    "title": "Vous plaisantez Monsieur Tanner",
-    "author": "Jean-Paul Dubois",
-    "category": "Roman",
-    "isGoldmine": false,
-    "cover": "https://m.media-amazon.com/images/I/61tXCWjo+9L._AC_UF1000,1000_QL80_.jpg"
+    "cover": "https://books.google.com/books/content?id=NqDODwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   }
 ];
