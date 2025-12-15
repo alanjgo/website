@@ -18,8 +18,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: #d4d4d4;
-  transition: all 0.15s ease;
+  color: #ffffff;
 }
 
 .contact-link:hover .contact-icon {
@@ -27,6 +26,16 @@
 }
 
 .contact-link:hover .contact-icon svg {
+  stroke: #ffffff;
+  fill: #ffffff; 
+}
+
+.contact-link-linkedin:hover .contact-icon {
+  background: #0a66c2;
+}
+
+.contact-link-linkedin:hover .contact-icon svg {
+  fill: #ffffff;
   stroke: #ffffff;
 }
 
