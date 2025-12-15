@@ -10,7 +10,7 @@ export function CardReactionGif({ isVisible = false }) {
       // Délai de 3 secondes avant d'afficher le gif
       const timer = setTimeout(() => {
         setShouldShow(true)
-      }, 3000)
+      }, 2000)
 
       return () => clearTimeout(timer)
     } else {

@@ -11,5 +11,6 @@
 }
 
 .footer-link:hover {
-    color: #2563eb;
+    color: #fafafa;
+    text-decoration: underline;
 }
