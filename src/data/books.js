@@ -997,7 +997,7 @@ export const books = [
     "title": "Pourquoi nous dormons",
     "author": "Matthew Walker",
     "category": "Société",
-    "isGoldmine": false,
+    "isGoldmine": true,
     "cover": "https://books.google.com/books/content?id=6YFqDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
@@ -1013,5 +1013,12 @@ export const books = [
     "category": "Société",
     "isGoldmine": true,
     "cover": "https://books.google.com/books/content?id=NqDODwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Magellan",
+    "author": "Stefan Zweig",
+    "category": "Biograhie",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/81ZuKpcJaQL._AC_UF1000,1000_QL80_.jpg"
   }
 ];
