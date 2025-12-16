@@ -86,7 +86,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 2rem 0;
+    padding: 3rem 0 1rem 0;
     justify-content: center;
     text-align: start;
   }
