@@ -4,13 +4,20 @@
     justify-content: center;
 }
 
+.footer-nav {
+    display: flex;
+    gap: 1rem;
+}
+
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .footer-link:hover {
     color: #fafafa;
-    text-decoration: underline;
 }
