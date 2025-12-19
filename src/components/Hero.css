@@ -10,16 +10,12 @@
 
 .hero-content {
   max-width: 64rem;
-  padding: 0 1.5rem;
   opacity: 0;
-  transform: translateY(2rem);
   text-align: start;
 }
 
 .hero-content.visible {
   opacity: 1;
-  transform: translateY(0);
-  padding: 0 16px;
 }
 
 .hero-header {

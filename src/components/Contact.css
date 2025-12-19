@@ -12,31 +12,16 @@
 }
 
 .contact-icon {
-  width: 3rem;
-  height: 3rem;
+ margin-top: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  color: #ffffff;
+  fill: #d4d4d4;
+  border-radius: 0.5rem;
 }
 
-.contact-link:hover .contact-icon {
-  background: #2563eb;
-}
-
-.contact-link:hover .contact-icon svg {
-  stroke: #ffffff;
-  fill: #ffffff; 
-}
-
-.contact-link-linkedin:hover .contact-icon {
-  background: #0a66c2;
-}
-
-.contact-link-linkedin:hover .contact-icon svg {
-  fill: #ffffff;
-  stroke: #ffffff;
+.contact-icon:hover {
+  fill: #0a66c2;
+  background: white;
 }
 
 /* Responsive */
@@ -54,7 +39,6 @@
   }
   
   .contact-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    align-items: flex-start;
   }
 }
