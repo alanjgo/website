@@ -16,7 +16,7 @@
 
   .card-shell {
     position: fixed;
-    right: 5%;
+    right: 16px;
     transform: translateX(120%);
     width: auto;
     display: flex;
