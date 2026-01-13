@@ -30,7 +30,7 @@ export function ReadingList() {
     return (
         <section className="reading-list-container">
             <div className="reading-list-header">
-                <h2 className="reading-list-title">Alan's Reading List</h2>
+                <h2 className="reading-list-title">Alan's reading list</h2>
                 <button
                     className={`filter-button ${showFavorites ? 'active' : ''}`}
                     onClick={() => setShowFavorites(!showFavorites)}
