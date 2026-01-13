@@ -784,6 +784,14 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/81OZ5mzhWmL.jpg"
   },
   {
+    "title": "Invasion",
+    "author": "Luke Rhinehart",
+    "category": "Roman",
+    "isGoldmine": true,
+    "cover": "https://images.noosfere.org/couv/a/auxforges043-2018-bandeau.jpg"
+  },
+  
+  {
     "title": "L'Homme dé",
     "author": "Luke Rhinehart",
     "category": "Roman",
