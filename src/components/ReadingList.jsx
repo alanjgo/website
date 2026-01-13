@@ -35,7 +35,7 @@ export function ReadingList() {
                     className={`filter-button ${showFavorites ? 'active' : ''}`}
                     onClick={() => setShowFavorites(!showFavorites)}
                 >
-                    {showFavorites ? 'Show All' : 'Show Favorites'}
+                    <span className="filter-text">{showFavorites ? 'Show All' : 'Show Favorites'}</span>
                     <Heart size={16} fill={showFavorites ? "#dc2626" : "none"} color={showFavorites ? "#dc2626" : "currentColor"} />
                 </button>
             </div>
