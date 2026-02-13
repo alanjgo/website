@@ -175,6 +175,13 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=sfFIOQGhVfEC&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
+    "title": "Limonov",
+    "author": "Emmanuel Carrère",
+    "category": "Biographie",
+    "isGoldmine": false,
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyUbWsPHnshjB2E5IxOr_ai6LoerUD1b1gQA&s"
+  },
+  {
     "title": "Voyage au bout de la nuit",
     "author": "Celine",
     "category": "Roman",
