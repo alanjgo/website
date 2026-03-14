@@ -10,12 +10,7 @@
 
 .hero-content {
   max-width: 64rem;
-  opacity: 0;
   text-align: start;
-}
-
-.hero-content.visible {
-  opacity: 1;
 }
 
 .hero-header {

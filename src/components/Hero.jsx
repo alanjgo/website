@@ -1,13 +1,6 @@
-import { useState, useEffect } from 'react'
 import './Hero.css'
 
 export function Hero({ onMouseEnter, onMouseLeave, onClick }) {
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    setIsVisible(true)
-  }, [])
-
   return (
     <section
       id="home"
@@ -16,7 +9,7 @@ export function Hero({ onMouseEnter, onMouseLeave, onClick }) {
       onMouseLeave={onMouseLeave}
       onClick={onClick}
     >
-      <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
+      <div className="hero-content">
         <div className="hero-header">
           <div className="profile-photo">
             <img src="https://ca.slack-edge.com/T02MSU1QQ-U08PARTAW22-7cb8ff5ed9ce-512" alt="Alan Jego" />
