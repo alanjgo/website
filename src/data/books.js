@@ -343,6 +343,13 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=9LQKOLxsiIEC&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
+    "title": "Indian Creek",
+    "author": "Pete Fromm",
+    "category": "Biograhie",
+    "isGoldmine": true,
+    "cover": "https://m.media-amazon.com/images/I/91Yu-xtZIEL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
     "title": "L'avènement des machines",
     "author": "Martin Ford",
     "category": "Société",
