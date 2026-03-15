@@ -1,8 +1,10 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import './Portfolio.css'
 
 export function Portfolio() {
   const [activeScreenshot, setActiveScreenshot] = useState(null)
+  const [activeIndex, setActiveIndex] = useState(0)
+  const scrollRef = useRef(null)
   const projects = useMemo(
     () => [
       {
@@ -152,6 +154,37 @@ export function Portfolio() {
     }
   }, [activeScreenshot, navigateScreenshot])
 
+  const scrollToProject = useCallback((index) => {
+    const container = scrollRef.current
+    if (!container) return
+    const child = container.children[index]
+    if (!child) return
+    container.scrollTo({ left: child.offsetLeft - container.offsetLeft, behavior: 'smooth' })
+  }, [])
+
+  useEffect(() => {
+    const container = scrollRef.current
+    if (!container) return
+
+    const items = Array.from(container.children)
+    if (items.length === 0) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            const index = items.indexOf(entry.target)
+            if (index !== -1) setActiveIndex(index)
+          }
+        }
+      },
+      { root: container, threshold: 0.5 }
+    )
+
+    for (const item of items) observer.observe(item)
+    return () => observer.disconnect()
+  }, [projects])
+
   const activeProject = activeScreenshot
     ? projects.find((project) => project.id === activeScreenshot.projectId)
     : null
@@ -172,43 +205,65 @@ export function Portfolio() {
         </div>
 
         <div className="projects-section">
-          <div className="projects-list">
-            {projects.map((project) => (
-              <div key={project.id} className="project-item">
-                <div className="project-header">
-                  <div className="project-title">{project.title}</div>
-                  <div className="project-info">
-                    <div className="project-logo">
-                      <img src={project.logo} alt={`${project.title} logo`} />
+          <div className="carousel-wrapper">
+            {activeIndex > 0 && (
+              <button
+                type="button"
+                className="carousel-nav carousel-nav--prev"
+                onClick={() => scrollToProject(activeIndex - 1)}
+                aria-label="Previous project"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
+              </button>
+            )}
+            <div className="projects-list" ref={scrollRef}>
+              {projects.map((project) => (
+                <div key={project.id} className="project-item">
+                  <div className="project-header">
+                    <div className="project-title">{project.title}</div>
+                    <div className="project-info">
+                      <div className="project-logo">
+                        <img src={project.logo} alt={`${project.title} logo`} />
+                      </div>
                     </div>
                   </div>
-                </div>
-                <p className="project-description">{project.description}</p>
-                {project.screenshots && project.screenshots.length > 0 && (
-                  <div className="project-screenshots">
-                    {project.screenshots.map((screenshot, index) => {
-                      const screenshotAlt = resolveScreenshotAlt(project.title, screenshot.alt)
+                  <p className="project-description">{project.description}</p>
+                  {project.screenshots && project.screenshots.length > 0 && (
+                    <div className="project-screenshots">
+                      {project.screenshots.map((screenshot, index) => {
+                        const screenshotAlt = resolveScreenshotAlt(project.title, screenshot.alt)
 
-                      return (
-                        <button
-                          key={screenshot.id}
-                          type="button"
-                          className="project-screenshot-button"
-                          onClick={() => openScreenshot(project.id, index)}
-                          aria-label={`Afficher l'image ${screenshotAlt}`}
-                        >
-                          <img
-                            src={screenshot.thumbnail || screenshot.full}
-                            alt={screenshotAlt}
-                            className="project-screenshot"
-                          />
-                        </button>
-                      )
-                    })}
-                  </div>
-                )}
-              </div>
-            ))}
+                        return (
+                          <button
+                            key={screenshot.id}
+                            type="button"
+                            className="project-screenshot-button"
+                            onClick={() => openScreenshot(project.id, index)}
+                            aria-label={`Afficher l'image ${screenshotAlt}`}
+                          >
+                            <img
+                              src={screenshot.thumbnail || screenshot.full}
+                              alt={screenshotAlt}
+                              className="project-screenshot"
+                            />
+                          </button>
+                        )
+                      })}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+            {activeIndex < projects.length - 1 && (
+              <button
+                type="button"
+                className="carousel-nav carousel-nav--next"
+                onClick={() => scrollToProject(activeIndex + 1)}
+                aria-label="Next project"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6" /></svg>
+              </button>
+            )}
           </div>
         </div>
       </div>
@@ -234,11 +289,11 @@ export function Portfolio() {
             {activeProjectScreenshots.length > 1 && (
               <button
                 type="button"
-                className="screenshot-lightbox__nav screenshot-lightbox__nav--prev"
+                className="carousel-nav carousel-nav--prev"
                 onClick={() => navigateScreenshot(-1)}
                 aria-label="Voir le screenshot précédent"
               >
-                ‹
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
               </button>
             )}
             <img
@@ -249,11 +304,11 @@ export function Portfolio() {
             {activeProjectScreenshots.length > 1 && (
               <button
                 type="button"
-                className="screenshot-lightbox__nav screenshot-lightbox__nav--next"
+                className="carousel-nav carousel-nav--next"
                 onClick={() => navigateScreenshot(1)}
                 aria-label="Voir la capture suivante"
               >
-                ›
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6" /></svg>
               </button>
             )}
             {activeProjectScreenshots.length > 1 && (
