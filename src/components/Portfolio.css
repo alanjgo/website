@@ -80,8 +80,10 @@
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-padding-left: 0;
   scroll-behavior: smooth;
   gap: 1.5rem;
+  padding-right: 1rem;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -95,10 +97,11 @@
   padding: 2.5rem;
   background: #0a0a0a;
   border-radius: 1.5rem;
-  width: 100%;
+  width: calc(100% - 5rem);
+  max-width: calc(100% - 5rem);
   min-height: 20rem;
   box-sizing: border-box;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   flex-shrink: 0;
 }
 
@@ -310,7 +313,13 @@
     padding: 2rem 0;
   }
 
+  .projects-list {
+    padding-right: 2rem;
+  }
+
   .project-item {
+    width: calc(100% - 2.5rem);
+    max-width: calc(100% - 2.5rem);
     padding: 1.25rem;
   }
 
@@ -340,6 +349,7 @@
   }
 
   .carousel-nav {
+    display: none;
     width: 2.25rem;
     height: 2.25rem;
     font-size: 1.25rem;
