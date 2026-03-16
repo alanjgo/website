@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
-import { Heart } from 'lucide-react'
+import { ArrowLeft, Heart } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { books } from '../data/books'
 import './ReadingList.css'
 
@@ -29,8 +30,11 @@ export function ReadingList() {
 
     return (
         <section className="reading-list-container">
+            <Link to="/" className="reading-list-back-link" aria-label="Back to home">
+                <ArrowLeft size={18} />
+            </Link>
             <div className="reading-list-header">
-                <h2 className="reading-list-title">Alan's reading list</h2>
+                <h1 className="reading-list-title">Alan's reading list</h1>
                 <button
                     className={`filter-button ${showFavorites ? 'active' : ''}`}
                     onClick={() => setShowFavorites(!showFavorites)}
