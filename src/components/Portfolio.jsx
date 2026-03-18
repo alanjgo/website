@@ -9,6 +9,21 @@ export function Portfolio() {
     () => [
       {
         id: 1,
+        title: "Curiositas",
+        description:
+          "A blogthat explaining technologies, no technical background required. Started with power plants and internet.",
+        logo: "/curiositas-logo.svg",
+        screenshots: [
+          {
+            id: 'curiositas-1',
+            thumbnail: '/curiositas-open-graph.png',
+            full: '/curiositas-open-graph.png',
+            alt: 'Curiositas preview',
+          },
+        ],
+      },
+      {
+        id: 2,
         title: "Lumi",
         description: "Get personalized financial advice with AI. Manage your money as easily as a game.",
         logo: "/lumi.png",
@@ -34,7 +49,7 @@ export function Portfolio() {
         ],
       },
       {
-        id: 2,
+        id: 3,
         title: "Vibin",
         description: "Your social app for your close friends. Guess which of your friends published a vibe.",
         logo: "/vibin.png",
