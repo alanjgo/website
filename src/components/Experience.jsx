@@ -30,16 +30,6 @@ export function Experience() {
       period: "2022",
       description: "Launched a recruitment platform to hire Product Managers.",
     },
-    {
-      id: 4,
-      company: "IAE Bordeaux",
-      logo: "/iaebordeaux.jpeg",
-      website: "https://www.iae-bordeaux.fr",
-      position: "Student",
-      period: "2020 - 2022",
-      description: "Master of Strategic Marketing",
-    },
-
   ]
 
   return (
