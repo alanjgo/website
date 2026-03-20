@@ -1,20 +1,11 @@
 .site-page {
   margin-left: 33%;
   margin-right: 33%;
-  padding: 5rem 0 4rem;
+  padding: 3.5rem 0 4rem;
 }
 
 .site-intro {
   margin-bottom: 3rem;
-}
-
-.site-back-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(250, 250, 250, 0.65);
-  margin-bottom: 1rem;
-  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .site-title {
@@ -76,12 +67,6 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .site-back-link:hover,
-  .site-back-link:focus-visible {
-    color: #fafafa;
-    outline: none;
-  }
-
   .site-card:hover,
   .site-card:focus-visible {
     background-color: rgba(255, 255, 255, 0.04);
@@ -93,7 +78,7 @@
   .site-page {
     margin-left: 2rem;
     margin-right: 2rem;
-    padding: 3.5rem 0 3rem;
+    padding: 3rem 0 3rem;
   }
 
   .site-card {

@@ -1,5 +1,4 @@
-import { ArrowLeft, ArrowUpRight } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { ArrowUpRight } from 'lucide-react'
 import { sites } from '../data/sites'
 import './Site.css'
 
@@ -9,9 +8,6 @@ export function Site() {
   return (
     <section className="site-page">
       <div className="site-intro">
-        <Link to="/" className="site-back-link" aria-label="Back to home">
-          <ArrowLeft size={18} />
-        </Link>
         <h1 className="site-title">Cool sites</h1>
         <p className="site-description">
           A list of great websites.

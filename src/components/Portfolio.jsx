@@ -75,6 +75,14 @@ export function Portfolio() {
           },
         ],
       },
+      {
+        id: 4,
+        title: "World",
+        description: "A personal world to explore ideas, links, and references in a more visual way.",
+        logo: "/favicon.ico",
+        url: "https://world.alanjego.com",
+        screenshots: [],
+      },
     ],
     []
   )

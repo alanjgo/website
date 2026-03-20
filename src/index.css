@@ -1,3 +1,7 @@
+:root {
+  --navbar-height: 73px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -38,6 +42,7 @@ a {
 
 .app-shell__content {
   flex: 1;
+  padding-top: var(--navbar-height);
 }
 
 .app {
@@ -54,6 +59,15 @@ a {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --navbar-height: 96px;
+  }
+
+  .app-shell__content {
+    padding-top: 0;
+    padding-bottom: var(--navbar-height);
+  }
+
   .app {
     margin-left: 2rem;
     margin-right: 2rem;

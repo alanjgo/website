@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { Home } from './components/Home'
 import { ReadingList } from './components/ReadingList'
 import { Site } from './components/Site'
-import { Footer } from './components/Footer'
+import { Navbar } from './components/Navbar'
 import { ScrollToTop } from './components/ScrollToTop'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from "@vercel/speed-insights/react"
@@ -12,6 +12,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <main className="app-shell">
+        <Navbar />
         <div className="app-shell__content">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -20,7 +21,6 @@ function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
-        <Footer />
         <Analytics />
         <SpeedInsights />
       </main>

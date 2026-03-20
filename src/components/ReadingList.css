@@ -1,17 +1,7 @@
 .reading-list-container {
-  padding: 4rem 2rem;
+  padding: 3.5rem 2rem 4rem;
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.reading-list-back-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(250, 250, 250, 0.65);
-  margin-bottom: 1rem;
-  margin-left: 2rem;
-  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .reading-list-title {
@@ -144,15 +134,11 @@
   text-overflow: ellipsis;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .reading-list-back-link:hover,
-  .reading-list-back-link:focus-visible {
-    color: #fafafa;
-    outline: none;
-  }
-}
-
 @media (max-width: 768px) {
+  .reading-list-container {
+    padding: 3rem 1rem 3rem;
+  }
+
   .reading-list-grid {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 2rem 1rem;
@@ -161,10 +147,6 @@
 
   .reading-list-header {
     padding: 0;
-  }
-
-  .reading-list-back-link {
-    margin-left: 0;
   }
 
   .filter-button {
