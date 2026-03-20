@@ -11,8 +11,9 @@ export function Portfolio() {
         id: 1,
         title: "Curiositas",
         description:
-          "A blogthat explaining technologies, no technical background required. Started with power plants and internet.",
+          "A blog explaining technologies used daily. No technical background required. Started with power plants and internet.",
         logo: "/curiositas-logo.svg",
+        url: "https://curiositas.alanjego.com",
         screenshots: [
           {
             id: 'curiositas-1',
@@ -243,29 +244,45 @@ export function Portfolio() {
                     </div>
                   </div>
                   <p className="project-description">{project.description}</p>
-                  {project.screenshots && project.screenshots.length > 0 && (
-                    <div className="project-screenshots">
-                      {project.screenshots.map((screenshot, index) => {
-                        const screenshotAlt = resolveScreenshotAlt(project.title, screenshot.alt)
+                  <div className="project-footer">
+                    {project.screenshots && project.screenshots.length > 0 && (
+                      <div className="project-screenshots">
+                        {project.screenshots.map((screenshot, index) => {
+                          const screenshotAlt = resolveScreenshotAlt(project.title, screenshot.alt)
 
-                        return (
-                          <button
-                            key={screenshot.id}
-                            type="button"
-                            className="project-screenshot-button"
-                            onClick={() => openScreenshot(project.id, index)}
-                            aria-label={`Afficher l'image ${screenshotAlt}`}
-                          >
-                            <img
-                              src={screenshot.thumbnail || screenshot.full}
-                              alt={screenshotAlt}
-                              className="project-screenshot"
-                            />
-                          </button>
-                        )
-                      })}
-                    </div>
-                  )}
+                          return (
+                            <button
+                              key={screenshot.id}
+                              type="button"
+                              className="project-screenshot-button"
+                              onClick={() => openScreenshot(project.id, index)}
+                              aria-label={`Afficher l'image ${screenshotAlt}`}
+                            >
+                              <img
+                                src={screenshot.thumbnail || screenshot.full}
+                                alt={screenshotAlt}
+                                className="project-screenshot"
+                              />
+                            </button>
+                          )
+                        })}
+                      </div>
+                    )}
+                    {project.url && (
+                      <a
+                        className="project-link project-link--corner"
+                        href={project.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Open ${project.title} in a new tab`}
+                      >
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <path d="M7 17 17 7" />
+                          <path d="M9 7h8v8" />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

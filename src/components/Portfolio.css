@@ -94,6 +94,8 @@
 
 .project-item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 2.5rem;
   background: #0a0a0a;
   border-radius: 1.5rem;
@@ -183,17 +185,53 @@
   cursor: pointer;
 }
 
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: #d4d4d4;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: transform 0.15s ease, opacity 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  color: #fafafa;
+  background: rgba(255, 255, 255, 0.08);
+  opacity: 0.9;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.project-link--corner {
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
 .project-description {
   color: #d4d4d4;
   line-height: 1.6;
   font-size: 0.95rem;
+  margin: 0;
+}
+
+.project-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
 }
 
 .project-screenshots {
   display: flex;
   gap: 0.75rem;
-  margin-top: 1rem;
   flex-wrap: wrap;
+  flex: 1;
 }
 
 .project-screenshot-button {
