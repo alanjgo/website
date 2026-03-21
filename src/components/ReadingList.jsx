@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react'
+import { motion } from 'motion/react'
 import { Heart } from 'lucide-react'
 import { books } from '../data/books'
 import './ReadingList.css'
@@ -36,7 +37,17 @@ export function ReadingList() {
                     onClick={() => setShowFavorites(!showFavorites)}
                 >
                     <span className="filter-text">{showFavorites ? 'Show All' : 'Show Favorites'}</span>
-                    <Heart size={16} fill={showFavorites ? "var(--color-favorite)" : "none"} color={showFavorites ? "var(--color-favorite)" : "currentColor"} />
+                    <motion.span
+                        className="filter-heart"
+                        initial={false}
+                        animate={showFavorites
+                            ? { scale: [1, 1.28, 0.94, 1], rotate: [-8, 6, 0] }
+                            : { scale: [1, 0.92, 1], rotate: [0, -4, 0] }
+                        }
+                        transition={{ duration: 0.28, ease: 'easeOut' }}
+                    >
+                        <Heart size={16} fill={showFavorites ? "var(--color-favorite)" : "none"} color={showFavorites ? "var(--color-favorite)" : "currentColor"} />
+                    </motion.span>
                 </button>
             </div>
 

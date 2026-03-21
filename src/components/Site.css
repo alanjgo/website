@@ -1,19 +1,19 @@
 .site-page {
-  margin-left: 33%;
-  margin-right: 33%;
-  padding: 3.5rem 0 4rem;
+  margin-left: var(--space-page-inline);
+  margin-right: var(--space-page-inline);
+  padding: var(--space-8) 0 var(--space-9);
 }
 
 .site-intro {
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-7);
 }
 
 .site-title {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-4);
 }
 
 .site-description {
-  max-width: 38rem;
+  max-width: 608px;
   font-size: var(--type-body-lg);
   line-height: 1.7;
   color: var(--color-overlay-light-68);
@@ -22,17 +22,17 @@
 .site-grid {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: var(--space-3);
 }
 
 .site-card {
   min-height: 0;
-  padding: 1.4rem;
+  padding: var(--space-5);
   border-radius: 22px;
   background-color: var(--color-overlay-light-02);
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: var(--space-4);
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -40,13 +40,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 .site-name-group {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
+  gap: var(--space-3);
   min-width: 0;
 }
 
@@ -73,9 +73,9 @@
 
 @media (max-width: 768px) {
   .site-page {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 3rem 0 3rem;
+    margin-left: var(--space-page-inline-mobile);
+    margin-right: var(--space-page-inline-mobile);
+    padding: var(--space-7) 0 var(--space-7);
   }
 
   .site-card {

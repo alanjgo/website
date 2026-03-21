@@ -4,25 +4,25 @@
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
-  padding-top: 3.5rem;
+  padding-top: var(--space-8);
   cursor: pointer;
 }
 
 .hero-content {
-  max-width: 64rem;
+  max-width: 1024px;
   text-align: start;
 }
 
 .hero-header {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  gap: var(--space-5);
+  margin-bottom: var(--space-5);
 }
 
 .profile-photo {
-  width: 4rem;
-  height: 4rem;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
@@ -41,22 +41,22 @@
 .hero-subtitle {
   font-size: var(--type-body);
   color: var(--color-text-muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-5);
   line-height: 1.4;
-  max-width: 48rem;
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-description {
-  max-width: 48rem;
+  max-width: 768px;
   margin: 0 auto;
 }
 
 .hero-text {
   color: var(--color-text-muted);
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-4);
 }
 
 .hero-text-secondary {
@@ -72,7 +72,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 3rem 0 1rem 0;
+    padding: var(--space-7) 0 var(--space-4) 0;
     justify-content: center;
     text-align: start;
   }
@@ -84,13 +84,13 @@
   
   .hero-header {
     flex-direction: row;
-    gap: 1rem;
+    gap: var(--space-4);
     align-items: center;
   }
   
   .profile-photo {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 56px;
+    height: 56px;
   }
   
   .hero-title {

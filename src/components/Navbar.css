@@ -10,7 +10,7 @@
 .navbar__inner {
   width: min(100%, 1200px);
   margin: 0 auto;
-  padding: 1rem 2rem 0.65rem;
+  padding: var(--space-4) var(--space-6) var(--space-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,9 +29,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.35rem;
+  gap: var(--space-2);
   flex-wrap: wrap;
-  padding: 0.2rem;
+  padding: var(--space-1);
 }
 
 .navbar__item {
@@ -52,8 +52,8 @@
   color: var(--color-overlay-light-68);
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.45rem 0.8rem;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-3);
   border-radius: 999px;
   transition: color 0.2s ease;
   white-space: nowrap;
@@ -79,17 +79,17 @@
   }
 
   .navbar__inner {
-    padding: 1.05rem 1.1rem 0.8rem;
+    padding: var(--space-4) var(--space-4) var(--space-3);
   }
 
   .navbar__nav {
     justify-content: center;
-    gap: 0.25rem;
-    padding: 0.25rem;
+    gap: var(--space-1);
+    padding: var(--space-1);
   }
 
   .navbar__link {
-    padding: 0.5rem 0.7rem;
-    font-size: 1.05rem;
+    padding: var(--space-2) var(--space-3);
+    font-size: 17px;
   }
 }

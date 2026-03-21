@@ -1,5 +1,17 @@
 :root {
   --navbar-height: 73px;
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 56px;
+  --space-9: 64px;
+  --space-page-inline: 33%;
+  --space-page-inline-mobile: 32px;
   --color-bg: #171717;
   --color-surface-strong: #0a0a0a;
   --color-surface: #0f0f0f;
@@ -98,8 +110,8 @@ h2 {
 
 .app {
   min-height: 100vh;
-  margin-left: 33%;
-  margin-right: 33%;
+  margin-left: var(--space-page-inline);
+  margin-right: var(--space-page-inline);
 }
 
 /* Utilitaires CSS */
@@ -128,7 +140,7 @@ h2 {
   }
 
   .app {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: var(--space-page-inline-mobile);
+    margin-right: var(--space-page-inline-mobile);
   }
 }
