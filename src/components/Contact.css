@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   fill: var(--color-text-muted);
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
 }
 
 .contact-icon:hover {

@@ -11,7 +11,7 @@
   max-height: 300px;
   width: auto;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -32,4 +32,3 @@
     display: none;
   }
 }
-

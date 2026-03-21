@@ -23,7 +23,7 @@
   padding: var(--space-2) var(--space-4);
   background: var(--color-overlay-light-10);
   border: none;
-  border-radius: 20px;
+  border-radius: var(--radius-2xl);
   color: var(--color-white);
   cursor: pointer;
   transition: all 0.2s ease;
@@ -70,7 +70,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 2/3;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: var(--space-4);
   overflow: hidden;
