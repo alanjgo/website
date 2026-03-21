@@ -11,7 +11,7 @@ export function Portfolio() {
         id: 1,
         title: "Curiositas",
         description:
-          "A blog explaining technologies used daily. No technical background required. Started with power plants and internet.",
+          "A blog explaining technologies used daily. No technical background required. Started with power plants and internet so far.",
         logo: "/curiositas-logo.svg",
         url: "https://curiositas.alanjego.com",
         screenshots: [
@@ -80,7 +80,14 @@ export function Portfolio() {
         title: "World",
         description: "A personal map revealing parts of the world I've visited.",
         url: "https://world.alanjego.com",
-        screenshots: [],
+        screenshots: [
+          {
+            id: 'world-1',
+            thumbnail: '/screenshots/world_map.png',
+            full: '/screenshots/world_map.png',
+            alt: 'Screenshot World map',
+          },
+        ],
       },
     ],
     []
