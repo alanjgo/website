@@ -36,7 +36,7 @@ export function ReadingList() {
                     onClick={() => setShowFavorites(!showFavorites)}
                 >
                     <span className="filter-text">{showFavorites ? 'Show All' : 'Show Favorites'}</span>
-                    <Heart size={16} fill={showFavorites ? "#dc2626" : "none"} color={showFavorites ? "#dc2626" : "currentColor"} />
+                    <Heart size={16} fill={showFavorites ? "var(--color-favorite)" : "none"} color={showFavorites ? "var(--color-favorite)" : "currentColor"} />
                 </button>
             </div>
 
@@ -60,7 +60,7 @@ export function ReadingList() {
                                 </div>
                             )}
                             {book.isGoldmine && (
-                                <Heart className="favorite-badge" size={20} fill="#dc2626" color="#dc2626" />
+                                <Heart className="favorite-badge" size={20} fill="var(--color-favorite)" color="var(--color-favorite)" />
                             )}
                         </div>
 

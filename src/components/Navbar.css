@@ -20,8 +20,8 @@
   display: inline-flex;
   border-radius: 999px;
   backdrop-filter: blur(18px);
-  background: rgba(23, 23, 23, 0.78);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  background: var(--color-overlay-bg-78);
+  box-shadow: 0 10px 30px var(--color-overlay-dark-18);
   pointer-events: auto;
 }
 
@@ -43,13 +43,13 @@
   position: absolute;
   inset: 0;
   border-radius: 999px;
-  background: #fafafa;
+  background: var(--color-text);
 }
 
 .navbar__link {
   position: relative;
   z-index: 1;
-  color: rgba(250, 250, 250, 0.68);
+  color: var(--color-overlay-light-68);
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -61,12 +61,12 @@
 
 .navbar__link:hover,
 .navbar__link:focus-visible {
-  color: #fafafa;
+  color: var(--color-text);
   outline: none;
 }
 
 .navbar__link.is-active {
-  color: #111111;
+  color: var(--color-text-inverse);
   font-weight: 600;
   letter-spacing: -0.02em;
 }

@@ -78,8 +78,7 @@ export function Portfolio() {
       {
         id: 4,
         title: "World",
-        description: "A personal world to explore ideas, links, and references in a more visual way.",
-        logo: "/favicon.ico",
+        description: "A personal map revealing parts of the world I've visited.",
         url: "https://world.alanjego.com",
         screenshots: [],
       },
@@ -246,9 +245,11 @@ export function Portfolio() {
                   <div className="project-header">
                     <div className="project-title">{project.title}</div>
                     <div className="project-info">
-                      <div className="project-logo">
-                        <img src={project.logo} alt={`${project.title} logo`} />
-                      </div>
+                      {project.logo && (
+                        <div className="project-logo">
+                          <img src={project.logo} alt={`${project.title} logo`} />
+                        </div>
+                      )}
                     </div>
                   </div>
                   <p className="project-description">{project.description}</p>

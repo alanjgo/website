@@ -1,5 +1,41 @@
 :root {
   --navbar-height: 73px;
+  --color-bg: #171717;
+  --color-surface-strong: #0a0a0a;
+  --color-surface: #0f0f0f;
+  --color-border-subtle: #262626;
+  --color-text: #fafafa;
+  --color-text-muted: #d4d4d4;
+  --color-text-faint: #a3a3a3;
+  --color-text-inverse: #111111;
+  --color-white: #ffffff;
+  --color-favorite: #dc2626;
+  --color-linkedin: #0a66c2;
+  --color-overlay-light-02: rgba(255, 255, 255, 0.02);
+  --color-overlay-light-04: rgba(255, 255, 255, 0.04);
+  --color-overlay-light-08: rgba(255, 255, 255, 0.08);
+  --color-overlay-light-10: rgba(255, 255, 255, 0.1);
+  --color-overlay-light-15: rgba(255, 255, 255, 0.15);
+  --color-overlay-light-20: rgba(255, 255, 255, 0.2);
+  --color-overlay-light-35: rgba(255, 255, 255, 0.35);
+  --color-overlay-light-50: rgba(255, 255, 255, 0.5);
+  --color-overlay-light-68: rgba(250, 250, 250, 0.68);
+  --color-overlay-light-75: rgba(255, 255, 255, 0.75);
+  --color-overlay-light-95: rgba(255, 255, 255, 0.95);
+  --color-overlay-dark-18: rgba(0, 0, 0, 0.18);
+  --color-overlay-bg-78: rgba(23, 23, 23, 0.78);
+  --color-overlay-scrim: rgba(6, 8, 10, 0.92);
+  --color-overlay-surface: rgba(15, 17, 19, 0.65);
+  --color-overlay-surface-hover: rgba(20, 22, 24, 0.85);
+  --type-display-xl: clamp(40px, 7vw, 76px);
+  --type-display-lg: clamp(40px, 6vw, 64px);
+  --type-heading-lg: 24px;
+  --type-heading-md: 20px;
+  --type-heading-sm: 18px;
+  --type-body-lg: 18px;
+  --type-body: 16px;
+  --type-body-sm: 14px;
+  --type-meta: 12px;
 }
 
 * {
@@ -9,13 +45,13 @@
 }
 
 html {
-  background: #171717;
+  background: var(--color-bg);
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
-  color: #fafafa;
+  color: var(--color-text);
   max-width: 100vw;
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -32,6 +68,21 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1 {
+  font-size: var(--type-heading-lg);
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--type-heading-lg);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin: 0;
 }
 
 .app-shell {
@@ -61,6 +112,14 @@ a {
 @media (max-width: 768px) {
   :root {
     --navbar-height: 96px;
+  }
+
+  h1 {
+    font-size: var(--type-heading-md);
+  }
+
+  h2 {
+    font-size: var(--type-heading-md);
   }
 
   .app-shell__content {

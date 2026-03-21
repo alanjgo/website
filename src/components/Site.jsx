@@ -31,7 +31,7 @@ export function Site() {
                   alt=""
                   loading="lazy"
                 />
-                <h2>{site.name}</h2>
+                <p className="site-name">{site.name}</p>
               </div>
               <ArrowUpRight size={18} />
             </div>

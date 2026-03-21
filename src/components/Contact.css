@@ -15,13 +15,13 @@
  margin-top: 1rem;
   display: flex;
   align-items: center;
-  fill: #d4d4d4;
+  fill: var(--color-text-muted);
   border-radius: 0.5rem;
 }
 
 .contact-icon:hover {
-  fill: #0a66c2;
-  background: white;
+  fill: var(--color-linkedin);
+  background: var(--color-white);
 }
 
 /* Responsive */
