@@ -27,4 +27,12 @@ export const sites = [
     name: 'Lando Norris',
     url: 'https://landonorris.com/',
   },
+  {
+    name: 'Works in Progress',
+    url: 'https://worksinprogress.co/',
+  },
+  {
+    name: 'Brian Lovin',
+    url: 'https://brianlovin.com/',
+  },
 ]
