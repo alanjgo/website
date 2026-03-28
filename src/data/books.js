@@ -855,6 +855,13 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=KgWQEQAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
+    "title": "Le pays des autres",
+    "author": "Leïla Slimani",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/71LPB5VGS4S.jpg"
+  },
+  {
     "title": "How the world really works",
     "author": "Vaclav Smil",
     "category": "Sciences",
