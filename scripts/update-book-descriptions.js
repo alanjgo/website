@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -135,4 +137,3 @@ async function updateBookDescriptions() {
 
 // Exécuter le script
 updateBookDescriptions();
-

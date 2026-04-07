@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react'
 import './Experience.css'
 
 export function Experience() {

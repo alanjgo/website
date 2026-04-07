@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "update-descriptions": "node scripts/update-book-descriptions.js"
+    "update-descriptions": "node scripts/update-book-descriptions.js",
+    "update-site-previews": "node scripts/update-site-previews.js"
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",

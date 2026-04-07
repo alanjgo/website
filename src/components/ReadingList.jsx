@@ -31,7 +31,7 @@ export function ReadingList() {
     return (
         <section className="reading-list-container">
             <div className="reading-list-header">
-                <h1 className="reading-list-title">Alan's reading list</h1>
+                <h1 className="reading-list-title">Alan&apos;s reading list</h1>
                 <button
                     className={`filter-button ${showFavorites ? 'active' : ''}`}
                     onClick={() => setShowFavorites(!showFavorites)}
