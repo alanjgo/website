@@ -35,4 +35,8 @@ export const sites = [
     name: 'Brian Lovin',
     url: 'https://brianlovin.com/',
   },
+  {
+    name: 'Ryo Lu',
+    url: 'https://ryo.lu/',
+  },
 ]
