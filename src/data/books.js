@@ -368,7 +368,7 @@ export const books = [
     "author": "Bill Gates",
     "category": "Société",
     "isGoldmine": false,
-    "cover": "https://editions.flammarion.com/media/cache/couverture_large/flammarion_img/Couvertures/9782081516427.jpg"
+    "cover": "https://m.media-amazon.com/images/I/71NlaoFtXiL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "title": "Les faux-monnayeurs",
@@ -473,7 +473,7 @@ export const books = [
     "author": "Michel Houellebecq",
     "category": "Roman",
     "isGoldmine": false,
-    "cover": "https://editions.flammarion.com/media/cache/couverture_large/flammarion_img/Couvertures/9782080285201.jpg"
+    "cover": "https://m.media-amazon.com/images/I/51DfS-gZdQL._AC_UY436_FMwebp_QL65_.jpg"
   },
   {
     "title": "Sérotonine",
@@ -537,6 +537,13 @@ export const books = [
     "category": "Biograhie",
     "isGoldmine": false,
     "cover": "https://m.media-amazon.com/images/I/71sVQDj0SCL.jpg"
+  },
+  {
+    "title": "Une brève histoire du futur : comment la science va changer le monde",
+    "author": "Michio Kaku",
+    "category": "Sciences",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/61RWPjUAhpL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "title": "Les innovateurs",
@@ -672,6 +679,13 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/71KTTvkClIL.jpg"
   },
   {
+    "title": "Terre ceinte",
+    "author": "Mohamed Mbougar Sarr",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/512Eoix0ywS._SY445_SX342_ML2_.jpg"
+  },
+  {
     "title": "La Femme de ménage",
     "author": "Freida McFadden",
     "category": "Roman",
@@ -712,6 +726,13 @@ export const books = [
     "category": "Roman",
     "isGoldmine": true,
     "cover": "https://books.google.com/books/content?id=qxYODgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Kafka sur le rivage",
+    "author": "Haruki Murakami",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/61nQKCqBg6L._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "title": "L'almanack de Naval",
@@ -862,6 +883,20 @@ export const books = [
     "cover": "https://m.media-amazon.com/images/I/71LPB5VGS4S.jpg"
   },
   {
+    "title": "Le pays des autres. Vol. 2. Regardez-nous danser",
+    "author": "Leïla Slimani",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQqPZM9Vm_0wRe9sS3bvzq85fgFlpnIFNRps0_TU5gGmbExjXhhnvEaT9UmVRAIXM5zupZe9NHj6_y2MqlmbtotByJoRcYw3G3IDmV5Y1FVFm7r1apXpMWt&usqp=CAc"
+  },
+  {
+    "title": "Le pays des autres. Vol. 3. J'emporterai le feu",
+    "author": "Leïla Slimani",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTyUTGG4Esx50cDPmVHRA8h7zu3Tw7ie627ekVmwvgfuEAONPBEypYxU72uqj3zjZrOxRNZSREdCyF-SibSTUTxsuhSQTBl4Gy4Ww5b-IMcJmdyWDfVQBTirA&usqp=CAc"
+  },
+  {
     "title": "How the world really works",
     "author": "Vaclav Smil",
     "category": "Sciences",
@@ -979,6 +1014,13 @@ export const books = [
     "category": "Biograhie",
     "isGoldmine": false,
     "cover": "https://books.google.com/books/content?id=JpDVDwAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
+  },
+  {
+    "title": "Le château des Carpathes",
+    "author": "Jules Verne",
+    "category": "Roman",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/91ZKAQv5t1L._AC_UF1000,1000_QL80_.jpg"
   },
   {
     "title": "Voyage au centre de la Terre",
