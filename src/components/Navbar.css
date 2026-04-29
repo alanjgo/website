@@ -26,6 +26,7 @@
 }
 
 .navbar__nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,14 +36,17 @@
 
 .navbar__item {
   position: relative;
+  z-index: 1;
   border-radius: var(--radius-full);
 }
 
 .navbar__active-pill {
   position: absolute;
-  inset: 0;
+  left: 0;
+  z-index: 0;
   border-radius: var(--radius-full);
   background: var(--color-text);
+  pointer-events: none;
 }
 
 .navbar__link {
