@@ -58,5 +58,17 @@ export const sites = [
     "url": "https://ryo.lu/",
     "ogTitle": null,
     "ogImage": null
+  },
+  {
+    "name": "Riley Walz",
+    "url": "https://walzr.com/",
+    "ogTitle": "Riley Walz",
+    "ogImage": null
+  },
+  {
+    "name": "Nate Parrott",
+    "url": "https://nateparrott.com/",
+    "ogTitle": "Nate Parrott’s Nice and Engaging Website",
+    "ogImage": null
   }
 ]
