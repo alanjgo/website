@@ -70,5 +70,11 @@ export const sites = [
     "url": "https://nateparrott.com/",
     "ogTitle": "Nate Parrott’s Nice and Engaging Website",
     "ogImage": null
+  },
+  {
+    "name": "Art Timeline",
+    "url": "https://art-timeline.com/",
+    "ogTitle": "Art Timeline",
+    "ogImage": "https://framerusercontent.com/assets/BzT7Op90bCtQuLh9puA3dtU0jyI.png"
   }
 ]

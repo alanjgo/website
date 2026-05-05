@@ -68,7 +68,7 @@
   font-weight: 600;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
   .site-card:hover,
   .site-card:focus-visible,
   .site-card--active {
