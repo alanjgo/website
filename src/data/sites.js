@@ -76,5 +76,17 @@ export const sites = [
     "url": "https://art-timeline.com/",
     "ogTitle": "Art Timeline",
     "ogImage": "https://framerusercontent.com/assets/BzT7Op90bCtQuLh9puA3dtU0jyI.png"
+  },
+  {
+    "name": "Lineto",
+    "url": "https://lineto.com/",
+    "ogTitle": "Lineto.com",
+    "ogImage": null
+  },
+  {
+    "name": "Staycation",
+    "url": "https://staycation.co/",
+    "ogTitle": "Staycation | Unforgettable experiences in beautiful hotels near you.",
+    "ogImage": "https://staycation.twic.pics/pictures/static/landing/generic/header.jpeg"
   }
 ]
