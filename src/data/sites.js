@@ -88,5 +88,17 @@ export const sites = [
     "url": "https://staycation.co/",
     "ogTitle": "Staycation | Unforgettable experiences in beautiful hotels near you.",
     "ogImage": "https://staycation.twic.pics/pictures/static/landing/generic/header.jpeg"
+  },
+  {
+    "name": "Robbie Tilton",
+    "url": "https://robbietilton.com/",
+    "ogTitle": "Robbie Tilton",
+    "ogImage": "https://www.robbietilton.com/static/graphics/thumbnail.png"
+  },
+  {
+    "name": "Karyn Nakamura",
+    "url": "https://karynnakamura.com/",
+    "ogTitle": "KARYN NAKAMURA",
+    "ogImage": "https://karynnakamura.com/folder.png"
   }
 ]
