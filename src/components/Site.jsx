@@ -81,7 +81,7 @@ export function Site() {
       <div className="site-intro">
         <h1 className="site-title">Cool sites</h1>
         <p className="site-description">
-          A list of great websites.
+          Websites that I love to see for fun.
         </p>
       </div>
 
