@@ -1,4 +1,5 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { usePostHog } from '@posthog/react'
 import { motion } from 'motion/react'
 import { Heart } from 'lucide-react'
 import { books } from '../data/books'
@@ -16,6 +17,7 @@ const isGraphicNovel = (book) => (
 export function ReadingList() {
     const [activeTab, setActiveTab] = useState('books')
     const [showFavorites, setShowFavorites] = useState(false)
+    const posthog = usePostHog()
     const activeTabIndex = Math.max(
         READING_TABS.findIndex((tab) => tab.id === activeTab),
         0,
@@ -107,7 +109,10 @@ export function ReadingList() {
                                 aria-selected={activeTab === tab.id}
                                 aria-controls="reading-list-panel"
                                 className={`reading-tab ${activeTab === tab.id ? 'active' : ''}`}
-                                onClick={() => setActiveTab(tab.id)}
+                                onClick={() => {
+                                    posthog?.capture('reading_list_tab_switched', { tab: tab.id })
+                                    setActiveTab(tab.id)
+                                }}
                                 whileTap={{ scale: 0.97 }}
                                 transition={{ type: 'spring', stiffness: 420, damping: 30 }}
                             >
@@ -120,7 +125,11 @@ export function ReadingList() {
                         className={`filter-button ${showFavorites ? 'active' : ''}`}
                         aria-label={showFavorites ? 'Show all books' : 'Show favorite books'}
                         aria-pressed={showFavorites}
-                        onClick={() => setShowFavorites(!showFavorites)}
+                        onClick={() => {
+                            const next = !showFavorites
+                            posthog?.capture('reading_list_favorites_toggled', { enabled: next })
+                            setShowFavorites(next)
+                        }}
                     >
                         <motion.span
                             className="filter-heart"

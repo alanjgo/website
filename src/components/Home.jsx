@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { usePostHog } from '@posthog/react'
 import { Hero } from './Hero'
 import { Card } from './Card'
 import { Portfolio } from './Portfolio'
@@ -9,8 +10,12 @@ import { CardReactionGif } from './CardReactionGif'
 export function Home() {
     const [isCardVisible, setIsCardVisible] = useState(false)
     const [isCardClicked, setIsCardClicked] = useState(false)
+    const posthog = usePostHog()
 
     const handleMouseEnter = () => {
+        if (!isCardVisible) {
+            posthog?.capture('business_card_revealed', { trigger: 'hover' })
+        }
         setIsCardVisible(true)
         setIsCardClicked(false)
     }
@@ -22,6 +27,9 @@ export function Home() {
     }
 
     const handleClick = () => {
+        if (!isCardVisible) {
+            posthog?.capture('business_card_revealed', { trigger: 'click' })
+        }
         setIsCardVisible(true)
         setIsCardClicked(true)
     }

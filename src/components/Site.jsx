@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { usePostHog } from '@posthog/react'
 import { ArrowUpRight } from 'lucide-react'
 import { sites } from '../data/sites'
 import './Site.css'
@@ -13,6 +14,7 @@ export function Site() {
   const cardRefs = useRef(new Map())
   const [activeSiteName, setActiveSiteName] = useState(null)
   const [previewPosition, setPreviewPosition] = useState(null)
+  const posthog = usePostHog()
 
   const activeSite = displayedSites.find((site) => site.name === activeSiteName) ?? null
   const hasActivePreview = Boolean(activeSite?.ogTitle && activeSite?.ogImage)
@@ -93,6 +95,7 @@ export function Site() {
             href={site.url}
             target="_blank"
             rel="noreferrer"
+            onClick={() => posthog?.capture('cool_site_clicked', { site_name: site.name, site_url: site.url })}
             ref={(node) => {
               if (node) {
                 cardRefs.current.set(site.name, node)

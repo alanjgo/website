@@ -1,6 +1,9 @@
+import { usePostHog } from '@posthog/react'
 import './Contact.css'
 
 export function Contact() {
+  const posthog = usePostHog()
+
   return (
     <section id="contact" className="contact">
       <div className="container">
@@ -10,6 +13,7 @@ export function Contact() {
             className="contact-method"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => posthog?.capture('linkedin_clicked')}
           >
             <div className="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

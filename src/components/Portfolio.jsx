@@ -1,10 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { usePostHog } from '@posthog/react'
 import './Portfolio.css'
 
 export function Portfolio() {
   const [activeScreenshot, setActiveScreenshot] = useState(null)
   const [activeIndex, setActiveIndex] = useState(0)
   const scrollRef = useRef(null)
+  const posthog = usePostHog()
   const projects = useMemo(
     () => [
       {
@@ -102,6 +104,11 @@ export function Portfolio() {
   }
 
   const openScreenshot = (projectId, screenshotIndex) => {
+    const project = projects.find((p) => p.id === projectId)
+    posthog?.capture('project_screenshot_opened', {
+      project_name: project?.title,
+      screenshot_index: screenshotIndex,
+    })
     setActiveScreenshot({ projectId, screenshotIndex })
   }
 
@@ -291,6 +298,7 @@ export function Portfolio() {
                         target="_blank"
                         rel="noreferrer"
                         aria-label={`Open ${project.title} in a new tab`}
+                        onClick={() => posthog?.capture('project_link_clicked', { project_name: project.title, project_url: project.url })}
                       >
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="M7 17 17 7" />

@@ -1,6 +1,8 @@
+import { usePostHog } from '@posthog/react'
 import './Experience.css'
 
 export function Experience() {
+  const posthog = usePostHog()
   const experiences = [
     {
       id: 1,
@@ -48,7 +50,7 @@ export function Experience() {
                     <div className="company-info">
                       <p className="company-name">{exp.company}</p>
                       <div className="company-logo">
-                        <a href={exp.website} target="_blank" rel="noopener noreferrer" title={`See ${exp.company} website`}>
+                        <a href={exp.website} target="_blank" rel="noopener noreferrer" title={`See ${exp.company} website`} onClick={() => posthog?.capture('company_link_clicked', { company_name: exp.company, company_url: exp.website })}>
                           <img src={exp.logo} alt={`${exp.company} logo`} />
                         </a>
                       </div>
