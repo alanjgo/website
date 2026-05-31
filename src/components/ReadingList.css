@@ -10,23 +10,92 @@
 
 .reading-list-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: var(--space-4);
   margin-bottom: var(--space-7);
   padding: 0 var(--space-6);
+}
+
+.reading-list-actions {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.reading-tabs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  background: var(--color-overlay-light-10);
+  border-radius: var(--radius-2xl);
+}
+
+.reading-tab {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 var(--space-3);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-2xl);
+  color: var(--color-overlay-light-60);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--type-meta);
+  line-height: 1;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.reading-tabs__active-pill {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  border-radius: var(--radius-2xl);
+  background: var(--color-white);
+  pointer-events: none;
+}
+
+.reading-tab:hover {
+  color: var(--color-white);
+}
+
+.reading-tab.active {
+  color: var(--color-surface-strong);
+}
+
+.reading-tab:focus-visible,
+.filter-button:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 3px;
 }
 
 .filter-button {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   background: var(--color-overlay-light-10);
   border: none;
   border-radius: var(--radius-2xl);
   color: var(--color-white);
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+.filter-heart {
+  display: flex;
 }
 
 .filter-button:hover {
@@ -56,6 +125,14 @@
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: var(--space-7) var(--space-6);
   padding: 0 var(--space-6);
+}
+
+.reading-list-empty {
+  grid-column: 1 / -1;
+  margin: var(--space-8) 0 0;
+  color: var(--color-overlay-light-50);
+  font-size: var(--type-body-sm);
+  text-align: center;
 }
 
 .book-card {
@@ -144,6 +221,16 @@
     padding: 0;
   }
 
+  .reading-tabs {
+    max-width: calc(100% - 48px);
+    overflow-x: auto;
+  }
+
+  .reading-tab {
+    min-height: 32px;
+    padding: 0 var(--space-3);
+  }
+
   .filter-button {
     background-color: transparent !important;
     border: none;
@@ -157,10 +244,6 @@
   .filter-button svg {
     width: 24px;
     height: 24px;
-  }
-
-  .filter-text {
-    display: none;
   }
 
   .filter-button.active:hover svg {

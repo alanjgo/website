@@ -14,6 +14,14 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=f6ugAgAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
+    "title": "Capital et Idéologie en bande dessinée",
+    "author": "Claire Alet, Benjamin Adam",
+    "category": "Économie",
+    "type": "graphic-novel",
+    "isGoldmine": false,
+    "cover": "https://ref.lamartinieregroupe.com/media/9782021469578/grande/146957_couverture_Hres_0.jpg"
+  },
+  {
     "title": "Veiller sur elle",
     "author": "Jean-Baptiste Andrea",
     "category": "Roman",
@@ -118,6 +126,14 @@ export const books = [
     "isGoldmine": false,
     "cover": "https://images.epagine.fr/153/9782072798153_1_75.jpg"
   },
+  {
+    "title": "Le Monde sans fin",
+    "author": "Christophe Blain, Jean-Marc Jancovici",
+    "category": "Sciences",
+    "type": "graphic-novel",
+    "isGoldmine": true,
+    "cover": "https://bdi.dlpdomain.com/album/9782205088168/couv/M650x789/le-monde-sans-fin-le-monde-sans-fin-miracle-energetique-et-derive-climatique.jpg"
+  },
 {
     "title": "L'étrange défaite",
     "author": "Marc Bloch",
@@ -215,6 +231,14 @@ export const books = [
     "category": "Roman",
     "isGoldmine": false,
     "cover": "https://m.media-amazon.com/images/I/712t4hBwMrL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "Notre affaire",
+    "author": "Collectif",
+    "category": "Société",
+    "type": "graphic-novel",
+    "isGoldmine": false,
+    "cover": "https://books.google.fr/books/content?id=lA-P0QEACAAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70n0F4qDN_-L1QuTfDhFWi8KQp6D7jkGs6lcTHqeOerzxVfAr0ug-aervk-7JlUQxnTksusZI4NL6eKHbOr4lBEgcaZZrL-eN96EcUpTbERshUak-RgyUy3eNyZDrQHQPvvssPm",
   },
   {
     "title": "Ceux qui restent",
@@ -362,6 +386,14 @@ export const books = [
     "category": "Biograhie",
     "isGoldmine": false,
     "cover": "https://ecx.images-amazon.com/images/I/51dr6w94tOL._SX195_.jpg"
+  },
+  {
+    "title": "Fukushima - Chronique d'un accident sans fin",
+    "author": "Bertrand Galic, Roger Vidal",
+    "category": "Société",
+    "type": "graphic-novel",
+    "isGoldmine": false,
+    "cover": "https://media.hachette.fr/imgArticle/GLENAT/2021/9782344034378-001-X.jpeg?source=web&v=6c59fcea2879d17f7428ff97d8571fc3"
   },
   {
     "title": "Climat : comment éviter un désastre",
@@ -834,6 +866,14 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=KwbXEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
+    "title": "La Distinction - librement inspiré du livre de Pierre Bourdieu",
+    "author": "Tiphaine Rivière",
+    "category": "Société",
+    "type": "graphic-novel",
+    "isGoldmine": false,
+    "cover": "https://www.editions-delcourt.fr/sites/default/files/styles/image_list_retinafy_/public/product/9782413081333.webp?itok=a-dmGeIQ"
+  },
+  {
     "title": "Tout le monde n'a pas eu la chance de rater ses études",
     "author": "Olivier Roland",
     "category": "Business",
@@ -867,6 +907,13 @@ export const books = [
     "category": "Roman",
     "isGoldmine": false,
     "cover": "https://m.media-amazon.com/images/I/91m6dOLvyTL.jpg"
+  },
+  {
+    "title": "L'Arabe du futur 1",
+    "author": "Riad Sattouf",
+    "type": "graphic-novel",
+    "isGoldmine": false,
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4wH83MvCeRxoLZkRCmTBxUhGUGgm97VZHJGCopFj1CYiTPV9sOGGwnO8gQrZ2YuZVi2eLaMfdxg2GkJbV-SRQ6CViSKKNUj-hngmROJB-&s=10"
   },
   {
     "title": "Frankenstein",
@@ -1091,5 +1138,12 @@ export const books = [
     "category": "Biograhie",
     "isGoldmine": false,
     "cover": "https://m.media-amazon.com/images/I/81ZuKpcJaQL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "title": "Sapiens - Les piliers de la civilisation",
+    "author": "David Vandermeulen, Daniel Casanave, Yuval Noah Harari",
+    "type": "graphic-novel",
+    "isGoldmine": true,
+    "cover": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTD_G0ks7Vyhy7pYw-uYeefa-iRziwbApZewbdiZHG9Mkx5hvee",
   }
 ];
