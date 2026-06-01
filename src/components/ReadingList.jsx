@@ -7,7 +7,7 @@ import './ReadingList.css'
 
 const READING_TABS = [
     { id: 'books', label: 'Books' },
-    { id: 'graphic-novel', label: 'Graphic Novel' },
+    { id: 'graphic-novel', label: 'Graphic Novels' },
 ]
 
 const isGraphicNovel = (book) => (

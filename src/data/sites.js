@@ -100,5 +100,11 @@ export const sites = [
     "url": "https://karynnakamura.com/",
     "ogTitle": "KARYN NAKAMURA",
     "ogImage": "https://karynnakamura.com/folder.png"
+  },
+  {
+    "name": "Sam Peitz",
+    "url": "https://www.sam-peitz.com/",
+    "ogTitle": "sam peitz",
+    "ogImage": null
   }
 ]
