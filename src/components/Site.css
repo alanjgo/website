@@ -127,6 +127,13 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .site-page {
+    margin-left: var(--space-page-inline-tablet);
+    margin-right: var(--space-page-inline-tablet);
+  }
+}
+
 @media (max-width: 768px) {
   .site-page {
     margin-left: var(--space-page-inline-mobile);

@@ -11,6 +11,7 @@
   --space-8: 56px;
   --space-9: 64px;
   --space-page-inline: 33%;
+  --space-page-inline-tablet: clamp(48px, 8vw, 96px);
   --space-page-inline-mobile: 32px;
   --radius-xs: 4px;
   --radius-sm: 6px;
@@ -128,6 +129,13 @@ h2 {
   max-width: 1200px;
   margin: 0  auto;
   padding: 0;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app {
+    margin-left: var(--space-page-inline-tablet);
+    margin-right: var(--space-page-inline-tablet);
+  }
 }
 
 @media (max-width: 768px) {
