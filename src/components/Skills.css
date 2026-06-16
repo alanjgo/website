@@ -1,0 +1,202 @@
+.skills-page {
+  margin-left: var(--space-page-inline);
+  margin-right: var(--space-page-inline);
+  padding: var(--space-8) 0 var(--space-9);
+}
+
+.skills-intro {
+  margin-bottom: var(--space-7);
+}
+
+.skills-title {
+  margin-bottom: var(--space-4);
+}
+
+.skills-description {
+  max-width: 608px;
+  font-size: var(--type-body-lg);
+  line-height: 1.7;
+  color: var(--color-overlay-light-68);
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.skill-card {
+  min-height: 0;
+  padding: var(--space-5);
+  border-radius: var(--radius-3xl);
+  background-color: var(--color-overlay-light-02);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-card:hover,
+.skill-card--expanded {
+  background-color: var(--color-overlay-light-04);
+}
+
+.skill-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.skill-name-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.skill-name {
+  font-size: var(--type-heading-md);
+  margin: 0;
+  font-weight: 600;
+}
+
+.skill-description {
+  max-width: 680px;
+  margin: 0;
+  font-size: var(--type-body);
+  line-height: 1.7;
+  color: var(--color-overlay-light-68);
+}
+
+.skill-toggle,
+.skill-copy {
+  border: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.skill-toggle {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: var(--color-text);
+  color: var(--color-text-inverse);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.skill-toggle:hover,
+.skill-toggle:focus-visible {
+  transform: scale(1.04);
+  outline: none;
+}
+
+.skill-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-top: var(--space-2);
+}
+
+.skill-install {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+  border: 1px solid var(--color-overlay-light-08);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-strong);
+}
+
+.skill-install code {
+  min-width: 0;
+  overflow-x: auto;
+  color: var(--color-overlay-light-95);
+  font-size: var(--type-body-sm);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.skill-copy {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--color-overlay-light-08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+  font-size: var(--type-body-sm);
+  font-weight: 600;
+}
+
+.skill-copy:hover {
+  background: var(--color-overlay-light-10);
+  outline: none;
+}
+
+.skill-content-actions {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  z-index: 1;
+  display: flex;
+}
+
+.skill-content-frame {
+  position: relative;
+}
+
+.skill-content {
+  max-height: 560px;
+  overflow: auto;
+  margin: 0;
+  padding: var(--space-4);
+  border: 1px solid var(--color-overlay-light-08);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-strong);
+  color: var(--color-overlay-light-75);
+  font-size: var(--type-body-sm);
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.skill-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .skills-page {
+    margin-left: var(--space-page-inline-tablet);
+    margin-right: var(--space-page-inline-tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-page {
+    margin-left: var(--space-page-inline-mobile);
+    margin-right: var(--space-page-inline-mobile);
+    padding: var(--space-7) 0 var(--space-7);
+  }
+
+  .skill-install {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .skill-copy {
+    width: 100%;
+  }
+
+  .skill-content-actions .skill-copy {
+    width: auto;
+  }
+}

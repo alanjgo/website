@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { Home } from './components/Home'
 import { ReadingList } from './components/ReadingList'
 import { Site } from './components/Site'
+import { Skills } from './components/Skills'
 import { Navbar } from './components/Navbar'
 import { ScrollToTop } from './components/ScrollToTop'
 import { Analytics } from '@vercel/analytics/react'
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/reading-list" element={<ReadingList />} />
             <Route path="/cool-sites" element={<Site />} />
+            <Route path="/skills" element={<Skills />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>

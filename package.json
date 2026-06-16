@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run generate-skills && vite",
+    "build": "npm run generate-skills && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "generate-skills": "node scripts/generate-skills.js",
     "update-descriptions": "node scripts/update-book-descriptions.js",
     "update-site-previews": "node scripts/update-site-previews.js"
   },
