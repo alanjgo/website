@@ -866,6 +866,13 @@ export const books = [
     "cover": "https://books.google.com/books/content?id=KwbXEAAAQBAJ&printsec=frontcover&img=1&zoom=0&source=gbs_api"
   },
   {
+    "title": "Kafka, les mécanismes du pouvoir",
+    "author": "Tiphaine Rivière",
+    "type": "graphic-novel",
+    "isGoldmine": false,
+    "cover": "https://m.media-amazon.com/images/I/515kaxrzmtL._SY445_SX342_ML2_.jpg"
+  },
+  {
     "title": "La Distinction - librement inspiré du livre de Pierre Bourdieu",
     "author": "Tiphaine Rivière",
     "category": "Société",
