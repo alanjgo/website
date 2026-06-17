@@ -4,6 +4,12 @@ import { Check, Copy, Minus, Plus } from 'lucide-react'
 import { skills } from '../data/skills.generated'
 import './Skills.css'
 
+const skillsInstallCommandPrefix = 'npx skills add alanjgo/product-skills'
+
+function getSkillInstallCommand(skill) {
+    return `${skillsInstallCommandPrefix} ${skill.slug}`
+}
+
 export function Skills() {
     const displayedSkills = useMemo(() => skills, [])
     const [expandedSkillName, setExpandedSkillName] = useState(null)
@@ -58,7 +64,7 @@ export function Skills() {
 
     const copyInstallCommand = (skill) => copyText({
         skill,
-        text: skill.installCommand,
+        text: getSkillInstallCommand(skill),
         target: 'install-command',
         eventName: 'product_skill_install_command_copied',
     })
@@ -77,6 +83,19 @@ export function Skills() {
                 <p className="skills-description">
                     Skills that I use daily.
                 </p>
+                <section className="skills-usage" aria-labelledby="skills-usage-title">
+                    <h2 id="skills-usage-title" className="skills-usage-title">
+                        How to use skills?
+                    </h2>
+                    <div className="skills-usage-content">
+                        <p className="skills-usage-text">
+                            Skills are a way to for coding agents (Claude Code, Codex, Cursor...) to follow rules without needing to re-enter the same instructions twice.
+                        </p>
+                        <p className="skills-usage-text">
+                            To download these skills, you can run the terminal command for the skill you like. If you prefer, you can also copy/paste the content and ask your agent to create a skill with the content.
+                        </p>
+                    </div>
+                </section>
             </div>
 
             <div className="skills-grid">
@@ -85,6 +104,7 @@ export function Skills() {
                     const isInstallCommandCopied = copiedTarget === `${skill.name}:install-command`
                     const isMarkdownCopied = copiedTarget === `${skill.name}:markdown`
                     const panelId = `skill-panel-${skill.name}`
+                    const installCommand = getSkillInstallCommand(skill)
 
                     return (
                         <article
@@ -113,7 +133,9 @@ export function Skills() {
                             {isExpanded ? (
                                 <div id={panelId} className="skill-panel">
                                     <div className="skill-install">
-                                        <code>{skill.installCommand}</code>
+                                        <code>
+                                            <span>npx&nbsp;</span>{installCommand.slice('npx '.length)}
+                                        </code>
                                         <button
                                             type="button"
                                             className="skill-copy"

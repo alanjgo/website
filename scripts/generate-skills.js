@@ -16,10 +16,6 @@ const rawBaseUrl =
   `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${repoBranch}`
 const requestTimeoutMs = 10000
 
-function getInstallCommand(slug) {
-  return `npx skills add ${repoOwner}/${repoName} --skill ${slug}`
-}
-
 function getSkillUrl(source) {
   return source.url ?? `${rawBaseUrl}/${source.slug}/SKILL.md`
 }
@@ -71,18 +67,20 @@ function createSkillFromMarkdown(source, markdown, sourceUrl) {
     slug: source.slug,
     name: source.name ?? source.slug,
     description: source.description,
-    installCommand: source.installCommand ?? getInstallCommand(source.slug),
     sourceUrl,
     content: markdown.trimEnd(),
   }
 }
 
 function createSkillFromCache(source, cachedSkill) {
+  const cachedSkillWithoutInstallCommand = { ...cachedSkill }
+
+  delete cachedSkillWithoutInstallCommand.installCommand
+
   return {
-    ...cachedSkill,
+    ...cachedSkillWithoutInstallCommand,
     slug: source.slug,
     description: '',
-    installCommand: source.installCommand ?? getInstallCommand(source.slug),
     sourceUrl: cachedSkill.sourceUrl ?? getSkillUrl(source),
   }
 }

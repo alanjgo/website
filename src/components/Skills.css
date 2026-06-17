@@ -19,6 +19,34 @@
   color: var(--color-overlay-light-68);
 }
 
+.skills-usage {
+  max-width: 680px;
+  margin-top: var(--space-5);
+}
+
+.skills-usage-title {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--type-body);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.skills-usage-content {
+  margin-top: var(--space-2);
+}
+
+.skills-usage-text {
+  margin: 0;
+  color: var(--color-overlay-light-68);
+  font-size: var(--type-body);
+  line-height: 1.7;
+}
+
+.skills-usage-text + .skills-usage-text {
+  margin-top: var(--space-3);
+}
+
 .skills-grid {
   display: flex;
   flex-direction: column;
@@ -27,7 +55,7 @@
 
 .skill-card {
   min-height: 0;
-  padding: var(--space-5);
+  padding: var(--space-4);
   border-radius: var(--radius-3xl);
   background-color: var(--color-overlay-light-02);
   display: flex;
@@ -104,29 +132,45 @@
 }
 
 .skill-install {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-3);
-  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+  min-height: calc(36px + var(--space-3) + var(--space-3));
+  padding: var(--space-3) calc(var(--space-3) + 36px + var(--space-3)) var(--space-3) var(--space-4);
   border: 1px solid var(--color-overlay-light-08);
   border-radius: var(--radius-lg);
   background: var(--color-surface-strong);
 }
 
 .skill-install code {
+  display: flex;
+  align-items: center;
   min-width: 0;
+  min-height: 36px;
   overflow-x: auto;
-  color: var(--color-overlay-light-95);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  color: #9ECBFF;
   font-size: var(--type-body-sm);
   line-height: 1.5;
   white-space: nowrap;
 }
 
+.skill-install code::-webkit-scrollbar {
+  display: none;
+}
+
+.skill-install code span {
+  color: #B392F0;
+}
+
 .skill-copy {
-  min-width: 36px;
+  width: 36px;
   height: 36px;
-  padding: 0 var(--space-3);
+  padding: 0;
+  aspect-ratio: 1;
   border-radius: var(--radius-full);
   background: var(--color-overlay-light-08);
   display: inline-flex;
@@ -141,6 +185,12 @@
 .skill-copy:hover {
   background: var(--color-overlay-light-10);
   outline: none;
+}
+
+.skill-install > .skill-copy {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
 }
 
 .skill-content-actions {
@@ -192,11 +242,7 @@
     flex-direction: column;
   }
 
-  .skill-copy {
-    width: 100%;
-  }
-
   .skill-content-actions .skill-copy {
-    width: auto;
+    width: 36px;
   }
 }
