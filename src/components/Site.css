@@ -10,13 +10,13 @@
 }
 
 .site-title {
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-2);
 }
 
 .site-description {
   max-width: 608px;
   font-size: var(--type-body-lg);
-  line-height: 1.7;
+  line-height: 1.6;
   color: var(--color-overlay-light-68);
 }
 

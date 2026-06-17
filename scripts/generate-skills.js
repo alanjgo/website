@@ -16,30 +16,6 @@ const rawBaseUrl =
   `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${repoBranch}`
 const requestTimeoutMs = 10000
 
-function parseFrontmatter(markdown, slug) {
-  const frontmatterMatch = markdown.match(/^---\n([\s\S]*?)\n---\n?/)
-
-  if (!frontmatterMatch) {
-    throw new Error(`Missing frontmatter in ${slug}/SKILL.md`)
-  }
-
-  return frontmatterMatch[1].split('\n').reduce((metadata, line) => {
-    const match = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/)
-
-    if (!match) {
-      return metadata
-    }
-
-    const [, key, rawValue] = match
-    const value = rawValue.trim().replace(/^['"]|['"]$/g, '')
-
-    return {
-      ...metadata,
-      [key]: value,
-    }
-  }, {})
-}
-
 function getInstallCommand(slug) {
   return `npx skills add ${repoOwner}/${repoName} --skill ${slug}`
 }
@@ -91,13 +67,10 @@ async function loadCachedSkills() {
 }
 
 function createSkillFromMarkdown(source, markdown, sourceUrl) {
-  const metadata = parseFrontmatter(markdown, source.slug)
-  const name = metadata.name ?? source.slug
-
   return {
     slug: source.slug,
-    name,
-    description: metadata.description ?? source.description ?? '',
+    name: source.name ?? source.slug,
+    description: source.description,
     installCommand: source.installCommand ?? getInstallCommand(source.slug),
     sourceUrl,
     content: markdown.trimEnd(),
@@ -108,6 +81,7 @@ function createSkillFromCache(source, cachedSkill) {
   return {
     ...cachedSkill,
     slug: source.slug,
+    description: '',
     installCommand: source.installCommand ?? getInstallCommand(source.slug),
     sourceUrl: cachedSkill.sourceUrl ?? getSkillUrl(source),
   }
