@@ -1,19 +1,13 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'motion/react'
+import { pageLinks } from '../routes'
 import './Navbar.css'
-
-const links = [
-  { to: '/', label: 'About' },
-  { to: '/reading-list', label: 'Readings' },
-  { to: '/cool-sites', label: 'Sites' },
-  { to: '/skills', label: 'Skills' },
-]
 
 export function Navbar() {
   const location = useLocation()
   const activeIndex = Math.max(
-    links.findIndex((link) => link.to === location.pathname),
+    pageLinks.findIndex((link) => link.to === location.pathname),
     0,
   )
   const itemRefs = useRef([])
@@ -78,7 +72,7 @@ export function Navbar() {
                 transition={{ type: 'spring', stiffness: 420, damping: 34 }}
               />
             )}
-            {links.map((link, index) => (
+            {pageLinks.map((link, index) => (
               <motion.div
                 key={link.to}
                 ref={(node) => {
