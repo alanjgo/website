@@ -106,5 +106,17 @@ export const sites = [
     "url": "https://www.sam-peitz.com/",
     "ogTitle": "sam peitz",
     "ogImage": null
+  },
+  {
+    "name": "!Boring Software",
+    "url": "https://notbor.ing",
+    "ogTitle": "!Boring Software",
+    "ogImage": "https://cdn.prod.website-files.com/5f3f4593fbaf55b6554787f3/623e07ac4fc3564f62966d0d_s2-hero-og.jpg"
+  },
+  {
+    "name": "Craft",
+    "url": "https://craft.do",
+    "ogTitle": "Craft — Productivity App for Notes, Tasks, and Docs",
+    "ogImage": "https://www.craft.do/craft_og.png"
   }
 ]

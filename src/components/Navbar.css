@@ -22,7 +22,7 @@
   display: inline-flex;
   border-radius: var(--radius-full);
   backdrop-filter: blur(18px);
-  background: var(--color-overlay-bg-78);
+  background: var(--color-overlay-light-02);
   box-shadow: 0 10px 30px var(--color-overlay-dark-18);
   pointer-events: auto;
 }
