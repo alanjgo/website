@@ -26,8 +26,8 @@ export const sites = [
   {
     "name": "Making Software",
     "url": "https://www.makingsoftware.com/",
-    "ogTitle": null,
-    "ogImage": null
+    "ogTitle": "Making Software",
+    "ogImage": "/site-previews/making-software.png"
   },
   {
     "name": "Stripe Press",
@@ -56,20 +56,20 @@ export const sites = [
   {
     "name": "Ryo Lu",
     "url": "https://ryo.lu/",
-    "ogTitle": null,
-    "ogImage": null
+    "ogTitle": "Ryo Lu",
+    "ogImage": "/site-previews/ryo-lu.png"
   },
   {
     "name": "Riley Walz",
     "url": "https://walzr.com/",
     "ogTitle": "Riley Walz",
-    "ogImage": null
+    "ogImage": "/site-previews/riley-walz.png"
   },
   {
     "name": "Nate Parrott",
     "url": "https://nateparrott.com/",
     "ogTitle": "Nate Parrott’s Nice and Engaging Website",
-    "ogImage": null
+    "ogImage": "/site-previews/nate-parrott.png"
   },
   {
     "name": "Art Timeline",
@@ -81,7 +81,7 @@ export const sites = [
     "name": "Lineto",
     "url": "https://lineto.com/",
     "ogTitle": "Lineto.com",
-    "ogImage": null
+    "ogImage": "/site-previews/lineto.png"
   },
   {
     "name": "Staycation",
@@ -105,7 +105,7 @@ export const sites = [
     "name": "Sam Peitz",
     "url": "https://www.sam-peitz.com/",
     "ogTitle": "sam peitz",
-    "ogImage": null
+    "ogImage": "/site-previews/sam-peitz.png"
   },
   {
     "name": "!Boring Software",
@@ -118,5 +118,17 @@ export const sites = [
     "url": "https://craft.do",
     "ogTitle": "Craft — Productivity App for Notes, Tasks, and Docs",
     "ogImage": "https://www.craft.do/craft_og.png"
+  },
+  {
+    "name": "Clay",
+    "url": "https://www.clay.com/",
+    "ogTitle": "Clay | Build systems to grow revenue",
+    "ogImage": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3ab15061812432ead96f56_Clay_Homepage_og-image%201000.png"
+  },
+  {
+    "name": "Olto",
+    "url": "https://www.infinitemachine.com/olto/eclectic-vehicle?lp_location=wf",
+    "ogTitle": "Olto – Eclectic Vehicle — Infinite Machine",
+    "ogImage": "https://cdn.prod.website-files.com/66856cd71d6df6db1cada051/69dc3794d235651a3ecefd7a_f6387957838f51f843c78285f47ab632_eclectic-vehicle-og-image.jpg"
   }
 ]
