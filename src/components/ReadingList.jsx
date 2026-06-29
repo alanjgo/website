@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { usePostHog } from '@posthog/react'
 import { motion } from 'motion/react'
 import { Heart } from 'lucide-react'
@@ -10,6 +10,15 @@ const READING_TABS = [
     { id: 'graphic-novel', label: 'Graphic Novels' },
 ]
 
+const FAVORITE_SPARKS = [
+    { angle: -92, distance: 34, size: 5, delay: 0, color: 'var(--color-favorite)' },
+    { angle: -46, distance: 38, size: 4, delay: 0.03, color: '#fb7185' },
+    { angle: 8, distance: 35, size: 5, delay: 0.01, color: '#fda4af' },
+    { angle: 52, distance: 32, size: 3, delay: 0.05, color: 'var(--color-favorite)' },
+    { angle: 118, distance: 36, size: 4, delay: 0.02, color: '#fecdd3' },
+    { angle: -158, distance: 31, size: 3, delay: 0.04, color: '#fb7185' },
+]
+
 const isGraphicNovel = (book) => (
     book.type === 'graphic-novel'
 )
@@ -17,6 +26,8 @@ const isGraphicNovel = (book) => (
 export function ReadingList() {
     const [activeTab, setActiveTab] = useState('books')
     const [showFavorites, setShowFavorites] = useState(false)
+    const [sparkBurstId, setSparkBurstId] = useState(0)
+    const [muteFavoriteHover, setMuteFavoriteHover] = useState(false)
     const posthog = usePostHog()
     const activeTabIndex = Math.max(
         READING_TABS.findIndex((tab) => tab.id === activeTab),
@@ -81,6 +92,16 @@ export function ReadingList() {
         }
     }, [activeTabIndex])
 
+    useEffect(() => {
+        if (!sparkBurstId) return undefined
+
+        const timeout = window.setTimeout(() => {
+            setSparkBurstId(0)
+        }, 700)
+
+        return () => window.clearTimeout(timeout)
+    }, [sparkBurstId])
+
     return (
         <section className="reading-list-container">
             <div className="reading-list-header">
@@ -122,15 +143,64 @@ export function ReadingList() {
                     </div>
                     <button
                         type="button"
-                        className={`filter-button ${showFavorites ? 'active' : ''}`}
+                        className={`filter-button ${showFavorites ? 'active' : ''} ${muteFavoriteHover ? 'hover-muted' : ''}`}
                         aria-label={showFavorites ? 'Show all books' : 'Show favorite books'}
                         aria-pressed={showFavorites}
                         onClick={() => {
                             const next = !showFavorites
                             posthog?.capture('reading_list_favorites_toggled', { enabled: next })
+                            if (next) {
+                                setMuteFavoriteHover(false)
+                                setSparkBurstId((currentSparkBurstId) => currentSparkBurstId + 1)
+                            } else {
+                                setMuteFavoriteHover(true)
+                            }
                             setShowFavorites(next)
                         }}
+                        onMouseLeave={() => {
+                            setMuteFavoriteHover(false)
+                        }}
                     >
+                        {sparkBurstId > 0 && (
+                            <span
+                                key={sparkBurstId}
+                                className="favorite-sparks"
+                                aria-hidden="true"
+                            >
+                                {FAVORITE_SPARKS.map((spark) => {
+                                    const angle = (spark.angle * Math.PI) / 180
+
+                                    return (
+                                        <motion.span
+                                            key={`${sparkBurstId}-${spark.angle}`}
+                                            className="favorite-spark"
+                                            initial={{
+                                                opacity: 0,
+                                                scale: 0.2,
+                                                x: 0,
+                                                y: 0,
+                                            }}
+                                            animate={{
+                                                opacity: [0, 1, 1, 0],
+                                                scale: [0.2, 1, 0.82, 0.15],
+                                                x: Math.cos(angle) * spark.distance,
+                                                y: Math.sin(angle) * spark.distance,
+                                                rotate: spark.angle + 90,
+                                            }}
+                                            transition={{
+                                                duration: 0.54,
+                                                delay: spark.delay,
+                                                ease: 'easeOut',
+                                            }}
+                                            style={{
+                                                '--spark-size': `${spark.size}px`,
+                                                '--spark-color': spark.color,
+                                            }}
+                                        />
+                                    )
+                                })}
+                            </span>
+                        )}
                         <motion.span
                             className="filter-heart"
                             initial={false}

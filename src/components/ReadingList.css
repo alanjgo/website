@@ -80,6 +80,7 @@
 }
 
 .filter-button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,11 +92,34 @@
   border-radius: var(--radius-2xl);
   color: var(--color-white);
   cursor: pointer;
+  overflow: visible;
+  isolation: isolate;
   transition: all 0.2s ease;
 }
 
 .filter-heart {
+  position: relative;
+  z-index: 1;
   display: flex;
+}
+
+.favorite-sparks {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.favorite-spark {
+  position: absolute;
+  top: calc(50% - (var(--spark-size) / 2));
+  left: calc(50% - (var(--spark-size) / 2));
+  width: calc(var(--spark-size) * 2.6);
+  height: var(--spark-size);
+  border-radius: var(--radius-2xl);
+  background: var(--spark-color);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--spark-color) 55%, transparent);
+  transform-origin: center;
 }
 
 .filter-button:hover {
@@ -112,7 +136,13 @@
 }
 
 .filter-button.active:hover svg {
+  fill: var(--color-favorite);
+  stroke: var(--color-favorite);
+}
+
+.filter-button.hover-muted:hover svg {
   fill: none;
+  stroke: var(--color-white);
 }
 
 .filter-button.active {
@@ -254,5 +284,11 @@
   .filter-button:not(.active):hover svg {
     fill: none !important;
     stroke: var(--color-white) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .favorite-sparks {
+    display: none;
   }
 }
