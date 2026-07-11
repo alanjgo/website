@@ -35,7 +35,7 @@ export function Home() {
     }
 
     return (
-        <div className="app">
+        <div className="app page-shell page-shell--prose">
             <Hero
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}

@@ -172,9 +172,9 @@ export function ReadingList() {
     }, [sparkBurstId])
 
     return (
-        <section className="reading-list-container">
-            <div className="reading-list-header">
-                <h1 className="reading-list-title">Alan&apos;s reading list</h1>
+        <section className="reading-list-container page-shell">
+            <div className="reading-list-header page-header">
+                <h1 className="reading-list-title page-title">Alan&apos;s reading list</h1>
                 <div className="reading-list-actions">
                     <div className="reading-tabs" role="tablist" aria-label="Reading list sections">
                         {tabPill && (

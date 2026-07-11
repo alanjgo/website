@@ -4,12 +4,12 @@
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
-  padding-top: var(--space-8);
   cursor: pointer;
 }
 
 .hero-content {
-  max-width: 1024px;
+  width: 100%;
+  max-width: var(--size-prose-max);
   text-align: start;
 }
 
@@ -72,7 +72,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: var(--space-7) 0 var(--space-4) 0;
+    padding: 0 0 var(--space-4);
     justify-content: center;
     text-align: start;
   }
@@ -94,7 +94,6 @@
   }
   
   .hero-title {
-    font-size: var(--type-heading-md);
     text-align: start;
   }
   

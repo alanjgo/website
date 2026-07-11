@@ -77,10 +77,10 @@ export function Skills() {
     })
 
     return (
-        <section className="skills-page" aria-label="Skills">
-            <div className="skills-intro">
-                <h1 className="skills-title">Skills for Product Managers</h1>
-                <p className="skills-description">
+        <section className="skills-page page-shell" aria-label="Skills">
+            <div className="skills-intro page-header">
+                <h1 className="skills-title page-title">Skills for Product Managers</h1>
+                <p className="skills-description page-description">
                     Skills that I use daily.
                 </p>
                 <section className="skills-usage" aria-labelledby="skills-usage-title">

@@ -1153,4 +1153,5 @@ export const books = [
     "isGoldmine": true,
     "cover": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTD_G0ks7Vyhy7pYw-uYeefa-iRziwbApZewbdiZHG9Mkx5hvee",
   }
+  
 ];

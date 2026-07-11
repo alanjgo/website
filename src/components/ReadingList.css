@@ -1,7 +1,5 @@
 .reading-list-container {
-  padding: var(--space-8) var(--space-6) var(--space-9);
-  max-width: 1000px;
-  margin: 0 auto;
+  padding-block: var(--space-page-block-start) var(--space-page-block-end);
 }
 
 .reading-list-title {
@@ -14,8 +12,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: var(--space-4);
-  margin-bottom: var(--space-7);
-  padding: 0 var(--space-6);
+  margin-bottom: var(--space-page-header);
 }
 
 .reading-list-actions {
@@ -154,7 +151,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: var(--space-7) var(--space-6);
-  padding: 0 var(--space-6);
 }
 
 .reading-list-empty {
@@ -217,7 +213,7 @@
 }
 
 .book-title {
-  font-family: 'Inter', sans-serif;
+  font-family: inherit;
   font-size: var(--type-body-sm);
   font-weight: 600;
   color: var(--color-white);
@@ -228,7 +224,7 @@
 }
 
 .book-author {
-  font-family: 'Inter', sans-serif;
+  font-family: inherit;
   font-size: var(--type-meta);
   color: var(--color-overlay-light-50);
   white-space: nowrap;
@@ -238,7 +234,7 @@
 
 @media (max-width: 768px) {
   .reading-list-container {
-    padding: var(--space-7) var(--space-4) var(--space-7);
+    padding-block: var(--space-page-block-start) var(--space-page-block-end);
   }
 
   .reading-list-grid {

@@ -1,9 +1,6 @@
 .site-page {
   position: relative;
-  width: min(calc(100% - var(--space-7) * 2), 1040px);
-  margin-left: auto;
-  margin-right: auto;
-  padding: var(--space-8) 0 var(--space-9);
+  padding-block: var(--space-page-block-start) var(--space-page-block-end);
 }
 
 .site-header {
@@ -11,7 +8,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--space-5);
-  margin-bottom: var(--space-7);
+  margin-bottom: var(--space-page-header);
 }
 
 .site-intro {
@@ -19,7 +16,7 @@
 }
 
 .site-title {
-  margin-bottom: var(--space-2);
+  margin-bottom: 0;
 }
 
 .site-description {
@@ -262,25 +259,20 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .site-page {
-    width: min(calc(100% - var(--space-page-inline-tablet)), 920px);
-  }
-
   .site-results--list {
-    width: calc(100vw - var(--space-page-inline-tablet) * 2);
+    width: min(100%, var(--size-prose-max));
   }
 }
 
 @media (max-width: 768px) {
   .site-page {
-    width: calc(100% - var(--space-page-inline-mobile) * 2);
-    padding: var(--space-7) 0 var(--space-7);
+    padding-block: var(--space-page-block-start) var(--space-page-block-end);
   }
 
   .site-header {
     align-items: flex-start;
     gap: var(--space-4);
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-page-header);
   }
 
   .site-description {

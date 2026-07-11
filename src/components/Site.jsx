@@ -151,11 +151,11 @@ export function Site() {
   }, [posthog, viewMode])
 
   return (
-    <section className="site-page">
-      <div className="site-header">
+    <section className="site-page page-shell">
+      <div className="site-header page-header">
         <div className="site-intro">
-          <h1 className="site-title">Cool sites</h1>
-          <p className="site-description">
+          <h1 className="site-title page-title">Cool sites</h1>
+          <p className="site-description page-description">
             Websites that I love to see for fun.
           </p>
         </div>

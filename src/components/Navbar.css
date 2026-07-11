@@ -92,6 +92,6 @@
 
   .navbar__link {
     padding: var(--space-2) var(--space-3);
-    font-size: 17px;
+    font-size: var(--type-body);
   }
 }
