@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { usePostHog } from '@posthog/react'
-import { motion } from 'motion/react'
+import { motion, useReducedMotion } from 'motion/react'
 import { Heart } from 'lucide-react'
 import { books } from '../data/books'
 import './ReadingList.css'
@@ -23,11 +23,75 @@ const isGraphicNovel = (book) => (
     book.type === 'graphic-novel'
 )
 
+const REVEAL_GROUP_SIZE = 10
+const REVEAL_STAGGER = 0.05
+
+const getRevealScore = (title, seed) => {
+    let hash = (2166136261 ^ seed) >>> 0
+
+    for (let index = 0; index < title.length; index += 1) {
+        hash ^= title.charCodeAt(index)
+        hash = Math.imul(hash, 16777619)
+    }
+
+    hash ^= hash >>> 16
+    hash = Math.imul(hash, 0x85ebca6b)
+    hash ^= hash >>> 13
+
+    return hash >>> 0
+}
+
+const createRandomRevealDelays = (bookList, seed) => {
+    const delays = new Array(bookList.length).fill(0)
+
+    for (let groupStart = 0; groupStart < bookList.length; groupStart += REVEAL_GROUP_SIZE) {
+        const groupEnd = Math.min(groupStart + REVEAL_GROUP_SIZE, bookList.length)
+        const randomOrder = Array.from(
+            { length: groupEnd - groupStart },
+            (_, offset) => groupStart + offset,
+        ).sort((firstIndex, secondIndex) => (
+            getRevealScore(bookList[firstIndex].title, seed)
+            - getRevealScore(bookList[secondIndex].title, seed)
+        ))
+
+        randomOrder.forEach((bookIndex, revealIndex) => {
+            delays[bookIndex] = revealIndex * REVEAL_STAGGER
+        })
+    }
+
+    return delays
+}
+
+const bookCardVariants = {
+    hidden: {
+        opacity: 0,
+        y: 12,
+    },
+    visible: (delay = 0) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            opacity: {
+                delay,
+                duration: 0.14,
+                ease: 'linear',
+            },
+            y: {
+                delay,
+                duration: 0.52,
+                ease: [0.22, 1, 0.36, 1],
+            },
+        },
+    }),
+}
+
 export function ReadingList() {
     const [activeTab, setActiveTab] = useState('books')
     const [showFavorites, setShowFavorites] = useState(false)
+    const [revealSeed, setRevealSeed] = useState(0)
     const [sparkBurstId, setSparkBurstId] = useState(0)
     const [muteFavoriteHover, setMuteFavoriteHover] = useState(false)
+    const shouldReduceMotion = useReducedMotion()
     const posthog = usePostHog()
     const activeTabIndex = Math.max(
         READING_TABS.findIndex((tab) => tab.id === activeTab),
@@ -47,6 +111,11 @@ export function ReadingList() {
 
         return result
     }, [activeTab, showFavorites])
+
+    const revealDelays = useMemo(
+        () => createRandomRevealDelays(filteredBooks, revealSeed),
+        [filteredBooks, revealSeed],
+    )
 
     useLayoutEffect(() => {
         const updateTabPill = () => {
@@ -132,6 +201,9 @@ export function ReadingList() {
                                 className={`reading-tab ${activeTab === tab.id ? 'active' : ''}`}
                                 onClick={() => {
                                     posthog?.capture('reading_list_tab_switched', { tab: tab.id })
+                                    if (tab.id !== activeTab) {
+                                        setRevealSeed((seed) => seed + 1)
+                                    }
                                     setActiveTab(tab.id)
                                 }}
                                 whileTap={{ scale: 0.97 }}
@@ -155,6 +227,7 @@ export function ReadingList() {
                             } else {
                                 setMuteFavoriteHover(true)
                             }
+                            setRevealSeed((seed) => seed + 1)
                             setShowFavorites(next)
                         }}
                         onMouseLeave={() => {
@@ -217,6 +290,7 @@ export function ReadingList() {
             </div>
 
             <div
+                key={`${activeTab}-${showFavorites ? 'favorites' : 'all'}`}
                 id="reading-list-panel"
                 className="reading-list-grid"
                 role="tabpanel"
@@ -224,9 +298,14 @@ export function ReadingList() {
             >
                 {filteredBooks.length > 0 ? (
                     filteredBooks.map((book, index) => (
-                        <article
-                            key={`${book.title}-${index}`}
+                        <motion.article
+                            key={book.title}
                             className="book-card"
+                            custom={revealDelays[index]}
+                            variants={bookCardVariants}
+                            initial={shouldReduceMotion ? false : 'hidden'}
+                            whileInView="visible"
+                            viewport={{ once: true, amount: 0.12 }}
                         >
                             <div className="book-cover-container">
                                 {book.cover ? (
@@ -234,7 +313,7 @@ export function ReadingList() {
                                         src={book.cover}
                                         alt={`Cover of ${book.title}`}
                                         className="book-cover-image"
-                                        loading="lazy"
+                                        loading={index < 10 ? 'eager' : 'lazy'}
                                     />
                                 ) : (
                                     <div className="book-cover-placeholder">
@@ -250,10 +329,16 @@ export function ReadingList() {
                                 <h3 className="book-title">{book.title}</h3>
                                 <p className="book-author">{book.author}</p>
                             </div>
-                        </article>
+                        </motion.article>
                     ))
                 ) : (
-                    <p className="reading-list-empty">No titles here yet.</p>
+                    <motion.p
+                        className="reading-list-empty"
+                        initial={shouldReduceMotion ? false : { opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                    >
+                        No titles here yet.
+                    </motion.p>
                 )}
             </div>
         </section>
