@@ -130,5 +130,11 @@ export const sites = [
     "url": "https://www.infinitemachine.com/olto/eclectic-vehicle?lp_location=wf",
     "ogTitle": "Olto – Eclectic Vehicle — Infinite Machine",
     "ogImage": "https://cdn.prod.website-files.com/66856cd71d6df6db1cada051/69dc3794d235651a3ecefd7a_f6387957838f51f843c78285f47ab632_eclectic-vehicle-og-image.jpg"
+  },
+  {
+    "name": "Cash App Brand Guidelines",
+    "url": "https://design.cash.app/",
+    "ogTitle": "Cash App Brand Guidelines",
+    "ogImage": "https://design.cash.app/assets/medias/og-image.png"
   }
 ]
