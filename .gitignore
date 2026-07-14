@@ -28,5 +28,6 @@ next-env.d.ts
 .env
 
 
-.claude
+.agents/
+.claude/
 .codex
